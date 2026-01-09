@@ -1,0 +1,31 @@
+//list current global configuration
+git config --global --list
+
+
+//Git commands
+git status
+
+git add <filename>
+git add .
+
+git restore --staged first.txt   --> Revert a file staged by add command
+git restore --staged .			 --> Revert all staged file
+git restore <filename> also works
+
+Git restore also works when you want to get rid of local changes.
+
+git commit -m <message> --> Commit to local repository
+	if you leave -m then git will open vi text editor to enter comment
+	
+//Show the commits which has been committed
+git reflog
+output
+=======
+(HEAD -> master)
+d846aa8 HEAD@{0}: commit: 5th git commit: 5 files
+0c59891 HEAD@{1}: commit: 4th git commit: 4 files
+
+//To revert a commit message
+git revert 4945db2
+
+
