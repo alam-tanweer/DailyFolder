@@ -1,0 +1,6 @@
+Link to Java and Maven install
+
+https://www.youtube.com/watch?v=jRsyQ7qkYqE
+Java current version is 23.0.1
+
+maven version 3.9.9

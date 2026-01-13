@@ -1,0 +1,21 @@
+Git Link to daily folder
+https://github.com/alam-tanweer/DailyFolder.git
+https://mycourses.rit.edu/d2l/home
+https://outlook.office.com/mail/
+https://classroom.github.com/classrooms
+https://discord.com/app
+https://drive.google.com/drive/folders/1ycugpM8Gl4yXBSvyxMTgHlJNiNMXcsrX
+
+Git Configuration
+====================
+1. Git config –list -> list all configuration items
+
+2. Setup git config identity
+   git config --global user.email "you@example.com"
+   git config --global user.name "Your Name"
+
+git clone https://<USERNAME>:<TOKEN>@<GIT_HOST>/<OWNER>/<REPOSITORY>.git
+
+https://github.com/GCCIS-Software-Development/124.AutoCommit.Starter
+https://docs.google.com/spreadsheets/d/1QDnNysPDjcnSIISOBF26sQd5ZVQM6Bze_5jz0TW2EVY/edit?gid=2045286653#gid=2045286653
+

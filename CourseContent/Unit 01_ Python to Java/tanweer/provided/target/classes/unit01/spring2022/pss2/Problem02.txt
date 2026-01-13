@@ -1,0 +1,23 @@
+package unit01.spring2021.pss2;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.Test;
+import org.junit.platform.commons.annotation.Testable;
+
+@Testable
+public class Problem02 { // LogTest
+    @Test
+    public void log2_1000000() {
+        // setup
+        int base = 2;
+        int n = 1000000;
+        int expected = 19;
+
+        // invoke
+        int actual = Log.log(base, n);
+
+        // analyze
+        assertEquals(expected, actual);
+    }
+}

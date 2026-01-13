@@ -1,0 +1,35 @@
+package unit01.spring2021.pss2;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.Test;
+import org.junit.platform.commons.annotation.Testable;
+
+@Testable
+public class Problem03 { // FibTest
+    @Test
+    public void fib2() {
+        // setup
+        int n = 2;
+        int expected = 1;
+
+        // invoke
+        int actual = Problem04.fib(n); // Fib.fib
+
+        // analyze
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void fib15() {
+        // setup
+        int n = 15;
+        int expected = 377;
+
+        // invoke
+        int actual = Problem04.fib(n); // Fib.fib
+
+        // analyze
+        assertEquals(expected, actual);
+    }
+}

@@ -1,0 +1,4 @@
+this is a test of the TextEdit class.
+this is the second line.
+this is the third.
+the next line will be blank.
