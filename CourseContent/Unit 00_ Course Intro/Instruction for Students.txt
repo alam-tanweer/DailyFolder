@@ -4,3 +4,20 @@ https://www.youtube.com/watch?v=jRsyQ7qkYqE
 Java current version is 23.0.1
 
 maven version 3.9.9
+
+
+sv6126@rit.edu;mmpgsh@rit.edu;sio1452@rit.edu;adg6200@rit.edu;oms7462@rit.edu;ss9858@rit.edu;nat3433@rit.edu;elj9985@rit.edu;nlj5310@rit.edu;gep4747@rit.edu;kd5699@rit.edu;jmp6632@rit.edu;hc3155@rit.edu
+Greetings!  I hope you are well and had a good break.
+If you're receiving this email, it means that you are registered for my section, 10, of Software Development & Problem Solving II (GCIS-124).  GCIS-124 will have roughly the same format as GCIS-123.  The biggest differences are that we will learn Java, explore advanced software development topics, and collaborate in small teams on a project.
+To jump start the semester, kindly complete the following prior to our initial class on Monday: 
+1. Join the course Discord server at https://people.rit.edu/teavse/discordverify/invite?id=G-5NRy5m
+2. Go to the Course Intro section in MyCourses (MyCourses > Content > Course Materials TuTh > Course Intro) and complete the following:
+   a. Review the Course Intro document (https://docs.google.com/presentation/d/1hc1THnWgbV_sN_2o4hpIpj_p96F4l4-V9Qi7GBXqpvQ/).
+   b. Accept the Github Classroom Invitation (https://classroom.github.com/a/9TYnrDL7) and select your name.
+      - Note: Student names are prefixed with section number.
+      - If your name is not there or you accidentally select someone else's name, contact me immediately.
+   c. Complete Assignment 0 (https://docs.google.com/document/d/1JkCJ2jQ0vwkjJHcXQQq-R4BK0ZYxC4yb60a5Ijqb1UM/edit?usp=drive_link).
+The purpose of Assignment 0 is to setup VSCode for Java and Maven.  On Tuesday, we'll jump right in and you will fall behind if this assignment is not completed prior.  An #assignment-0-0 channel has been created in Discord for question and answers.
+Please know that you can DM me on Discord at any time throughout the semester and I will respond as soon as I am able. I am committed to creating an inclusive and supportive learning environment where everyone feels respected and valued. If there’s anything you’d like me to know about you — such as preferred pronouns, accessibility needs, or anything else that might help you succeed in this course — please don’t hesitate to reach out.
+I'm looking forward to working with you this semester!
+Prof. Tanweer Alam
