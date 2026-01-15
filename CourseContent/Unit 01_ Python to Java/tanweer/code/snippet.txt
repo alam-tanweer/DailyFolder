@@ -1,0 +1,98 @@
+	"Method": {
+		"prefix": "method",
+		"body": [
+			"public $1 $2($3) {",
+			"    $0",
+			"}"
+		],
+		"description": "Method template"
+	},
+
+	============
+
+	{
+	// Place your snippets for java here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"While loop": {
+		"prefix": "while",
+		"body": [
+			"while ($1) {",
+			"    $0",
+			"}"
+		],
+		"description": "While loop"
+	},
+	"Try-With-Resources": {
+		"prefix": "tryr",
+		"body": [
+			"try ($1) {",
+			"    $0",
+			"} catch (Exception e) {",
+			"    e.printStackTrace();",
+			"}"
+		],
+		"description": "Try with resources"
+	},
+	"Method": {
+		"prefix": "method",
+		"body": [
+			"public $1 $2($3) {",
+			"    $0",
+			"}"
+		],
+		"description": "Method template"
+	},
+	"Getter": {
+		"prefix": "get",
+		"body": [
+			"public $1 get$2() {",
+			"    return $3;",
+			"}"
+		],
+		"description": "Getter"
+	},
+	"Setter": {
+		"prefix": "set",
+		"body": [
+			"public void set$1($2 $3) {",
+			"    this.$3 = $3;",
+			"}"
+		],
+		"description": "Setter"
+	},
+	"Equals method": {
+		"prefix": "equals",
+		"body": [
+			"@Override",
+			"public boolean equals(Object o) {",
+			"    if (this == o) return true;",
+			"    if (o == null || getClass() != o.getClass()) return false;",
+			"    $1 that = ($1) o;",
+			"    return $0;",
+			"}"
+		],
+		"description": "Equals override"
+	},
+	"If-Else statement": {
+		"prefix": "ife",
+		"body": [
+			"if ($1) {",
+			"    $2",
+			"} else {",
+			"    $0",
+			"}"
+		],
+		"description": "If-Else statement"
+	},
+}

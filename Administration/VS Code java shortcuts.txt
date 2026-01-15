@@ -1,0 +1,18 @@
+Snippet	Expands To
+sysout	System.out.println();
+
+sysoutv	System.out.println("var = " + var);
+
+main	public static void main(String[] args) {}
+
+fori	for (int i = 0; i < ; i++) {}
+
+foreach	Enhanced for loop
+
+if	if () {}
+
+try	try { } catch (Exception e) { }
+
+
+=================================
+
