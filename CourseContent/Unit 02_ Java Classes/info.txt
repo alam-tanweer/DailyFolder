@@ -1,0 +1,58 @@
+Nouns identified
+
+item , Star Wars (proper noun), Battle
+game, name
+Ships
+hull
+rating
+damage
+destruction
+addition
+ships
+shields
+time
+hull
+ship
+level
+armament
+weapons
+types
+enemy
+
+Start war ship name
+Millennium Falcon
+
+X-wing Starfighter (T-65 / T-70)
+
+Y-wing Starfighter
+
+A-wing Starfighter
+
+B-wing Starfighter
+
+TIE Fighter
+
+TIE Interceptor
+
+TIE Bomber
+
+TIE Advanced x1
+
+Jedi Starfighter
+
+ARC-170 Starfighter
+Millennium Falcon
+
+Executor
+
+Home One
+
+Tantive IV
+
+Ghost
+
+Slave I
+
+Razor Crest
+
+Supremacy
