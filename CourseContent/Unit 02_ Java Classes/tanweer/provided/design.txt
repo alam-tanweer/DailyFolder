@@ -1,0 +1,19 @@
+Star Wars Battle Game, space battles, ships, Star Wars Cinematic Universe,
+name, hull rating, damage, shields, time, armament, weapons, color,
+Heavy (Green), Normal (Red), Ion (Blue)
+
+Ship
+  name
+  hull rating
+  shields
+  weapon
+
+  sustain(damage)
+  recharge shields
+
+Weapon
+  damage type
+  color
+
+  fire
+

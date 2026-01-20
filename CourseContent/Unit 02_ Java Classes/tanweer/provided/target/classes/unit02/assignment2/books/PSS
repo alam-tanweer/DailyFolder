@@ -1,0 +1,54 @@
+Problem #1:
+
+See JPG of Library Class UML
+
+
+
+Problem #2:
+
+    private Book[] books;
+    private int bookCount;
+
+
+    public void addBook (Book book) {
+        if (bookCount == books.length) {
+            throw new IndexOutOfBoundsException ("Already have max books checked out.");
+        }
+
+        for (int i = 0; i < books.length; i++) {
+            if (books[i] == null) {
+                books[i] = book;
+                bookCount++;
+                return;
+            }
+        }
+    }
+
+
+
+
+
+Problem #3:
+
+    private Book findBook (String title) {
+        //  New code alert!  How to iterate through an array:
+        for (Book book: libraryBooks) {
+            if (book.getTitle().equals (title) && 
+                book.getStatus() == BookStatus.AVAILABLE) {
+                return book;
+            }
+        }
+        return null;
+    }
+
+
+
+Problem #4:
+
+1) Look for patron in list of library patrons
+2) If not exist create new patron
+3) Look for the book (See #3)
+4) If null returned throw an IllegalArgumentException with appropriate message
+5) Check to see if the patron already has the book checked out
+6) If so throw an IllegalArgumentException with appropriate message
+7) Otherwise add the book to the patron's book array

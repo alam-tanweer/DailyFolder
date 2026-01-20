@@ -1,0 +1,4 @@
+    @Override
+    public String toString () {
+        return String.format ("%s: Running for %s as a %s.", name, race, party);
+    }

@@ -1,0 +1,263 @@
+262
+The Adventures of Augie March,Saul Bellow
+Go Tell It on the Mountain,James Baldwin
+The Confessions of Nat Turner,William Styron
+"Rabbit, Run",John Updike
+Catch-22,Joseph Heller
+Play It as It Lays,Joan Didion
+Gone with the Wind,Margaret Mitchell
+The Heart Is a Lonely Hunter,Carson McCullers
+The Man Who Loved Children,Christina Stead
+Under the Net,Iris Murdoch
+Deliverance,James Dickey
+The Great Gatsby,F. Scott Fitzgerald
+Atonement,Ian McEwan
+The Blind Assassin,Margaret Atwood
+The Grapes of Wrath,John Steinbeck
+A Death in the Family,James Agee
+A Handful of Dust,Evelyn Waugh
+The Day of the Locust,Nathanael West
+Brideshead Revisited,Evelyn Waugh
+The Corrections,Jonathan Franzen
+A Clockwork Orange,Anthony Burgess
+Loving,Henry Green
+Infinite Jest,David Foster Wallace
+Lucky Jim,Kingsley Amis
+Herzog,Saul Bellow
+Gone with the Wind,Margaret Mitchell
+The Corrections,Jonathan Franzen
+Slaughterhouse-Five,Kurt Vonnegut
+Lolita,Vladimir Nabokov
+A Handful of Dust,Evelyn Waugh
+Midnight's Children,Salman Rushdie
+"Rabbit, Run",John Updike
+Their Eyes Were Watching God,Zora Neale Hurston
+Portnoy's Complaint,Philip Roth
+Revolutionary Road,Richard Yates
+Brideshead Revisited,Evelyn Waugh
+At Swim-Two-Birds,Flann O'Brien
+The Man Who Loved Children,Christina Stead
+Herzog,Saul Bellow
+The Berlin Stories,Christopher Isherwood
+The Great Gatsby,F. Scott Fitzgerald
+Native Son,Richard Wright
+The Man Who Loved Children,Christina Stead
+The Crying of Lot 49,Thomas Pynchon
+Red Harvest,Dashiell Hammett
+Red Harvest,Dashiell Hammett
+A Passage to India,E.M. Forster
+The Sportswriter,Richard Ford
+The Spy Who Came in from the Cold,John le Carre
+To the Lighthouse,Virginia Woolf
+The Assistant,Bernard Malamud
+Appointment in Samarra,John O'Hara
+Light in August,William Faulkner
+The Sportswriter,Richard Ford
+The Grapes of Wrath,John Steinbeck
+The Power and the Glory,Graham Greene
+The Great Gatsby,F. Scott Fitzgerald
+American Pastoral,Philip Roth
+1984,George Orwell
+A House for Mr. Biswas,V.S. Naipaul
+"I, Claudius",Robert Graves
+The Sun Also Rises,Ernest Hemingway
+Midnight's Children,Salman Rushdie
+Midnight's Children,Salman Rushdie
+A Handful of Dust,Evelyn Waugh
+An American Tragedy,Theodore Dreiser
+To Kill a Mockingbird,Harper Lee
+Play It as It Lays,Joan Didion
+The Catcher in the Rye,J.D. Salinger
+Naked Lunch,William Burroughs
+Snow Crash,Neal Stephenson
+A House for Mr. Biswas,V.S. Naipaul
+The Sheltering Sky,Paul Bowles
+Blood Meridian,Cormac McCarthy
+"Rabbit, Run",John Updike
+A Dance to the Music of Time,Anthony Powell
+Gone with the Wind,Margaret Mitchell
+The Bridge of San Luis Rey,Thornton Wilder
+Neuromancer,William Gibson
+Things Fall Apart,Chinua Achebe
+Deliverance,James Dickey
+Call It Sleep,Henry Roth
+Light in August,William Faulkner
+Gravity's Rainbow,Thomas Pynchon
+Ubik,Philip K. Dick
+Catch-22,Joseph Heller
+Death Comes for the Archbishop,Willa Cather
+The Adventures of Augie March,Saul Bellow
+Herzog,Saul Bellow
+A Dance to the Music of Time,Anthony Powell
+A Passage to India,E.M. Forster
+To Kill a Mockingbird,Harper Lee
+The Golden Notebook,Doris Lessing
+On the Road,Jack Kerouac
+Watchmen,Alan Moore and Dave Gibbons
+Money,Martin Amis
+The Big Sleep,Raymond Chandler
+The Prime of Miss Jean Brodie,Muriel Spark
+Portnoy's Complaint,Philip Roth
+The Man Who Loved Children,Christina Stead
+The Sportswriter,Richard Ford
+The Corrections,Jonathan Franzen
+Infinite Jest,David Foster Wallace
+The Moviegoer,Walker Percy
+Money,Martin Amis
+The Heart Is a Lonely Hunter,Carson McCullers
+Lord of the Flies,William Golding
+Watchmen,Alan Moore and Dave Gibbons
+American Pastoral,Philip Roth
+The Moviegoer,Walker Percy
+A Clockwork Orange,Anthony Burgess
+Lucky Jim,Kingsley Amis
+Death Comes for the Archbishop,Willa Cather
+Gone with the Wind,Margaret Mitchell
+White Noise,Don DeLillo
+Housekeeping,Marilynne Robinson
+Pale Fire,Vladimir Nabokov
+The Sheltering Sky,Paul Bowles
+The Sportswriter,Richard Ford
+The Lord of the Rings,J.R.R. Tolkien
+The Golden Notebook,Doris Lessing
+Watchmen,Alan Moore and Dave Gibbons
+The Assistant,Bernard Malamud
+The Spy Who Came in from the Cold,John le Carre
+On the Road,Jack Kerouac
+Portnoy's Complaint,Philip Roth
+A Passage to India,E.M. Forster
+Possession,A.S. Byatt
+Call It Sleep,Henry Roth
+Atonement,Ian McEwan
+Herzog,Saul Bellow
+Naked Lunch,William Burroughs
+Neuromancer,William Gibson
+A House for Mr. Biswas,V.S. Naipaul
+White Teeth,Zadie Smith
+The Confessions of Nat Turner,William Styron
+The Death of the Heart,Elizabeth Bowen
+Naked Lunch,William Burroughs
+On the Road,Jack Kerouac
+At Swim-Two-Birds,Flann O'Brien
+All the King's Men,Robert Penn Warren
+The Painted Bird,Jerzy Kosinski
+Lord of the Flies,William Golding
+The Great Gatsby,F. Scott Fitzgerald
+The Sot-Weed Factor,John Barth
+Atonement,Ian McEwan
+Revolutionary Road,Richard Yates
+Never Let Me Go,Kazuo Ishiguro
+"Rabbit, Run",John Updike
+One Flew Over the Cuckoo's Nest,Ken Kesey
+A Passage to India,E.M. Forster
+The Crying of Lot 49,Thomas Pynchon
+American Pastoral,Philip Roth
+Money,Martin Amis
+Falconer,John Cheever
+Revolutionary Road,Richard Yates
+Beloved,Toni Morrison
+One Flew Over the Cuckoo's Nest,Ken Kesey
+The Moviegoer,Walker Percy
+Naked Lunch,William Burroughs
+Animal Farm,George Orwell
+The Golden Notebook,Doris Lessing
+Revolutionary Road,Richard Yates
+The Blind Assassin,Margaret Atwood
+The Grapes of Wrath,John Steinbeck
+The Catcher in the Rye,J.D. Salinger
+American Pastoral,Philip Roth
+The Confessions of Nat Turner,William Styron
+A House for Mr. Biswas,V.S. Naipaul
+Herzog,Saul Bellow
+Red Harvest,Dashiell Hammett
+Tropic of Cancer,Henry Miller
+The Grapes of Wrath,John Steinbeck
+Under the Volcano,Malcolm Lowry
+Ragtime,E.L. Doctorow
+Lolita,Vladimir Nabokov
+Loving,Henry Green
+"Rabbit, Run",John Updike
+Slaughterhouse-Five,Kurt Vonnegut
+Animal Farm,George Orwell
+Things Fall Apart,Chinua Achebe
+The Corrections,Jonathan Franzen
+Animal Farm,George Orwell
+Death Comes for the Archbishop,Willa Cather
+An American Tragedy,Theodore Dreiser
+Atonement,Ian McEwan
+Under the Volcano,Malcolm Lowry
+A Death in the Family,James Agee
+Neuromancer,William Gibson
+Play It as It Lays,Joan Didion
+A Clockwork Orange,Anthony Burgess
+Deliverance,James Dickey
+The Heart of the Matter,Graham Greene
+The Bridge of San Luis Rey,Thornton Wilder
+The Sheltering Sky,Paul Bowles
+A Dance to the Music of Time,Anthony Powell
+The Assistant,Bernard Malamud
+Tropic of Cancer,Henry Miller
+Portnoy's Complaint,Philip Roth
+The Man Who Loved Children,Christina Stead
+A Clockwork Orange,Anthony Burgess
+Tropic of Cancer,Henry Miller
+The French Lieutenant's Woman,John Fowles
+Slaughterhouse-Five,Kurt Vonnegut
+A House for Mr. Biswas,V.S. Naipaul
+Housekeeping,Marilynne Robinson
+The Painted Bird,Jerzy Kosinski
+Catch-22,Joseph Heller
+Appointment in Samarra,John O'Hara
+Neuromancer,William Gibson
+The Berlin Stories,Christopher Isherwood
+Under the Net,Iris Murdoch
+The Painted Bird,Jerzy Kosinski
+Lord of the Flies,William Golding
+White Teeth,Zadie Smith
+Native Son,Richard Wright
+Wide Sargasso Sea,Jean Rhys
+The Recognitions,William Gaddis
+Mrs. Dalloway,Virginia Woolf
+Tropic of Cancer,Henry Miller
+Slaughterhouse-Five,Kurt Vonnegut
+The Heart Is a Lonely Hunter,Carson McCullers
+Loving,Henry Green
+Things Fall Apart,Chinua Achebe
+A Clockwork Orange,Anthony Burgess
+Gone with the Wind,Margaret Mitchell
+The Man Who Loved Children,Christina Stead
+White Noise,Don DeLillo
+The French Lieutenant's Woman,John Fowles
+White Noise,Don DeLillo
+Money,Martin Amis
+White Noise,Don DeLillo
+Light in August,William Faulkner
+Invisible Man,Ralph Ellison
+At Swim-Two-Birds,Flann O'Brien
+The Corrections,Jonathan Franzen
+Ubik,Philip K. Dick
+Portnoy's Complaint,Philip Roth
+1984,George Orwell
+An American Tragedy,Theodore Dreiser
+The Sound and the Fury,William Faulkner
+Tropic of Cancer,Henry Miller
+The Sot-Weed Factor,John Barth
+White Teeth,Zadie Smith
+The Crying of Lot 49,Thomas Pynchon
+Housekeeping,Marilynne Robinson
+Blood Meridian,Cormac McCarthy
+The French Lieutenant's Woman,John Fowles
+The Painted Bird,Jerzy Kosinski
+Under the Net,Iris Murdoch
+On the Road,Jack Kerouac
+Atonement,Ian McEwan
+American Pastoral,Philip Roth
+Lucky Jim,Kingsley Amis
+Appointment in Samarra,John O'Hara
+The Day of the Locust,Nathanael West
+The Golden Notebook,Doris Lessing
+Dog Soldiers,Robert Stone
+The Heart of the Matter,Graham Greene
+A Death in the Family,James Agee
+The Sportswriter,Richard Ford
+The Crying of Lot 49,Thomas Pynchon

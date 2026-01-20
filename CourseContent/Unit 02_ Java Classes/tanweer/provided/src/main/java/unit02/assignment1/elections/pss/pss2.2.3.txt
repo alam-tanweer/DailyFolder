@@ -1,0 +1,6 @@
+public enum Position {
+    MAYOR,
+    SHERIFF,
+    JUDGE,
+    ASSEMBLY_MEMBER
+}

@@ -1,0 +1,7 @@
+string bets = "200 12, 300 0, 150 22";
+
+String[] tokens = bets.split (", ");
+String[] parts = token.split (" ");
+int amount = Integer.parseInt (parts[0]);
+int number = Integer.parseInt (parts[1]);
+Bet bet = new Bet (amount, number);

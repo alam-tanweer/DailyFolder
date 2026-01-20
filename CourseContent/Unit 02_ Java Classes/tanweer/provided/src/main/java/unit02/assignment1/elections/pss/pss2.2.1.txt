@@ -1,0 +1,22 @@
+# I don't expect students to get all of the same things but it should be some 
+# significant subset of the items below.
+
+Class Candidate
+    name
+    affiliation
+    position
+    toString ()
+    equals ()
+
+Enumeration Position
+    Mayor
+    Sheriff
+    Judge
+    Assembly Member
+
+Enumeration Party
+    Republican
+    Democrat
+    Working Family
+    Libertarian
+    Independent

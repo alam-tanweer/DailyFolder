@@ -1,0 +1,6 @@
+public void spin () {
+    Random random = new Random ();
+    System.out.println ("The wheel spins ...");
+    ballLocation = random.nextInt (TOTAL_NUMBERS);
+    System.out.println ("It lands on " + ballLocation + "!");
+}
