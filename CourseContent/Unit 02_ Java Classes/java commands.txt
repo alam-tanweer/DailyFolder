@@ -1,0 +1,8 @@
+1. javac src/main/java/unit02/swb/Weapon.java
+2. javac src/main/java/unit02/swb/*.java
+3. java src/main/java/unit02/swb/StarWarsBattle
+4. javac -d output src/main/java/unit02/swb/*.java
+5. cd output
+6. java unit02.swb.StarWarsBattle
+7. cd ..
+8. java -cp output unit02.swb.StarWarsBattle
