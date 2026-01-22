@@ -1,0 +1,193 @@
+Exercise 1
+public class Book {
+
+    // private fields
+    private String title;
+    private int pages;
+
+    // constructor
+    public Book(String title, int pages) {
+        this.title = title;
+        this.pages = pages;
+    }
+
+    // main method
+    public static void main(String[] args) {
+        Book myBook = new Book("Belinda's Journey Around the World", 400);
+
+        System.out.println("Title: " + myBook.title);
+        System.out.println("Pages: " + myBook.pages);
+    }
+}
+
+Exercise 2
+
+public class Book {
+
+    // private fields
+    private String title;
+    private int pages;
+
+    // constructor
+    public Book(String title, int pages) {
+        this.title = title;
+        this.pages = pages;
+    }
+
+    // accessor methods (getters)
+    public String getTitle() {
+        return title;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+    // mutator method (setter) for pages
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
+
+    // main method
+    public static void main(String[] args) {
+        Book myBook = new Book("Belinda's Journey Around the World", 400);
+
+        // use accessors to print values
+        System.out.println("Title: " + myBook.getTitle());
+        System.out.println("Pages: " + myBook.getPages());
+
+        // modify pages using mutator
+        myBook.setPages(450);
+
+        // print updated value
+        System.out.println("Updated Pages: " + myBook.getPages());
+    }
+}
+
+Exercise 3
+public class Book {
+
+    // private fields
+    private String title;
+    private int pages;
+
+    // constructor with title and pages
+    public Book(String title, int pages) {
+        this.title = title;
+        this.pages = pages;
+    }
+
+    // constructor with title only (default pages = 150)
+    public Book(String title) {
+        this.title = title;
+        this.pages = 150;
+    }
+
+    // accessors
+    public String getTitle() {
+        return title;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+    // mutator
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
+
+    // main method
+    public static void main(String[] args) {
+        // Book from previous exercise
+        Book book1 = new Book("Belinda's Journey Around the World", 400);
+
+        // Book using new constructor
+        Book book2 = new Book("The Mystery of the Lost Code");
+
+        // print details for second book
+        System.out.println("Title: " + book2.getTitle());
+        System.out.println("Pages: " + book2.getPages());
+    }
+}
+
+Exercise 4
+public enum Genre {
+    FICTION,
+    HORROR,
+    ROMANCE
+}
+
+public class Book {
+
+    // private fields
+    private String title;
+    private int pages;
+    private Genre genre;
+
+    // constructor with title, pages, and genre
+    public Book(String title, int pages, Genre genre) {
+        this.title = title;
+        this.pages = pages;
+        this.genre = genre;
+    }
+
+    // constructor with title and genre (default pages = 150)
+    public Book(String title, Genre genre) {
+        this.title = title;
+        this.pages = 150;
+        this.genre = genre;
+    }
+
+    // accessors
+    public String getTitle() {
+        return title;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+    public Genre getGenre() {
+        return genre;
+    }
+
+    // mutator
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
+
+    // main method
+    public static void main(String[] args) {
+
+        Book book1 = new Book(
+                "Belinda's Journey Around the World",
+                400,
+                Genre.FICTION
+        );
+
+        Book book2 = new Book(
+                "Love in the Time of Java",
+                Genre.ROMANCE
+        );
+
+        // print all field values for book1
+        System.out.println("Book 1:");
+        System.out.println("Title: " + book1.getTitle());
+        System.out.println("Pages: " + book1.getPages());
+        System.out.println("Genre: " + book1.getGenre());
+
+        System.out.println();
+
+        // print all field values for book2
+        System.out.println("Book 2:");
+        System.out.println("Title: " + book2.getTitle());
+        System.out.println("Pages: " + book2.getPages());
+        System.out.println("Genre: " + book2.getGenre());
+    }
+}
+
+
+
+
+
