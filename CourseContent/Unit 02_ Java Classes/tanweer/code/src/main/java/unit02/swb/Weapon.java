@@ -53,8 +53,9 @@ public class Weapon {
     //2.12
     @Override
     public boolean equals(Object obj) {
-        if (obj instanceof Weapon) {
-            Weapon other = (Weapon)obj;
+        // if (obj instanceof Weapon) {
+        //     Weapon other = (Weapon)obj;
+        if (obj instanceof Weapon other) {
             return (this.damageAmount == other.damageAmount)
                 && (this.damageType == other.damageType);
         } else {

@@ -6,7 +6,6 @@ public enum DamageType {
     // HEAVY,
     // ION
 
-
     NORMAL("Red"),
     HEAVY("Green"),
     ION("Blue");  // Requires ; here
