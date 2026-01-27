@@ -1,0 +1,41 @@
+# 2 & 4
+public interface Animal {
+    String makeSound();
+    void hear(Animal[] animals);
+}
+
+public abstract class SocialAnimal implements Animal{
+    private String name;
+
+    public SocialAnimal(String name){
+        this.name = name;
+    }
+    
+    public String getName(){ 
+        return name;
+    }
+   
+    public abstract void talkTo(SocialAnimal animal);
+
+    public void hear(Animal[] animals){ 
+        int length = animals.length;
+        if(animals!= null && animals.length > 0){
+            Animal[] rest = Arrays.copyOfRange(animals, 0, length-1);
+            animals[length-1].hear(rest);
+            System.out.println(getName() + " hears " +  animals[length-1].makeSound()); 
+        }  
+    }  
+}
+
+#3
+public class Dog extends SocialAnimal {
+    public Dog(String name){
+        super(name);
+    }
+    public String makeSound(){
+        return "woof";
+    }
+    public void talkTo(SocialAnimal animal){
+        System.out.println(getName() + " barks " + makeSound() + " to " + animal.getName() +" waving its tail.");
+    }
+}

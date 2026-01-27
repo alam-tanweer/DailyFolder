@@ -1,0 +1,58 @@
+Round Robin:
+
+Cache = [A, B, C]
+Hits = 1
+Misses = 0
+
+Cache = [E, B, C]
+Hits = 1
+Misses = 1
+
+Cache = [E, A, C]
+Hits = 1
+Misses = 2
+
+Cache = [E, A, H]
+Hits = 1
+Misses = 3
+
+Cache = [G, A, H]
+Hits = 1
+Misses = 4
+
+Cache = [G, E, H]
+Hits = 1
+Misses = 5
+
+---------------------------
+LRU:
+
+Cache = [A, B, C]
+Count = [1, 0, 0]
+# Hits = 1
+# Misses = 0
+
+Cache = [A, E, C]
+Count = [1, 1, 0]
+# Hits = 1
+# Misses = 1
+
+Cache = [A, E, C]
+Count = [2, 1, 0]
+# Hits = 2
+# Misses = 1
+
+Cache = [A, E, H]
+Count = [2, 1, 1]
+# Hits = 2
+# Misses = 2
+
+Cache = [A, G, H]
+Count = [2, 1, 1]
+# Hits = 2
+# Misses = 3
+
+Cache = [A, E, H]
+Count = [2, 1, 1]
+# Hits = 2
+# Misses = 4

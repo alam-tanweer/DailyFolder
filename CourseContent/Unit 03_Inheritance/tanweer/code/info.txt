@@ -1,0 +1,52 @@
+//in the specific folder
+javadoc -d doc src/main/java/unit02/swb/*.java
+
+//all pacages
+javadoc -d doc -sourcepath code/src/main/java -subpackages unit02
+
+@author, @since, @see
+
+@param, @return, @throws, @exception
+
+======================
+javac
+-- If you compile specific file, and has dependency, you will get error.
+javac src/main/java/unit02/swb/Weapon.java
+
+src\main\java\unit02\swb\Weapon.java:13: error: cannot find symbol
+    public Weapon (String name, int amount, int fireRate, DamageType damageType) {
+
+javac src/main/java/unit02/swb/*.java
+It will compile but put everything in same folder
+
+//To recursively compile all of them.
+javac -d out (Get-ChildItem src -Recurse -Filter *.java).FullName
+
+$ java src/main/java/unit02/swb/StarWarsBattle       -- Execution will result in error. No package folder structure.
+Error: Could not find or load main class src.main.java.unit02.swb.StarWarsBattle
+Caused by: java.lang.NoClassDefFoundError: src/main/java/unit02/swb/StarWarsBattle (wrong name: un
+it02/swb/StarWarsBattle)
+
+
+javac -d output src/main/java/unit02/swb/*.java
+-- output files are created in output folder
+
+$ java output/unit02/swb/StarWarsBattle
+Error: Could not find or load main class output.unit02.swb.StarWarsBattle
+Caused by: java.lang.NoClassDefFoundError: output/unit02/swb/StarWarsBattle (wrong name: unit02/sw
+b/StarWarsBattle)
+
+--need to be in the output folder
+$ java unit02.swb.StarWarsBattle
+Tank - 12
+1 and 2 : true
+2 and 3 : false
+
+
+$ java -cp output/ unit02.swb.StarWarsBattle     -- Using classpath output
+Tank - 12
+1 and 2 : true
+2 and 3 : false
+
+-- Here java will compile all dependency package
+javac -d out -sourcepath src com/example/Main.java

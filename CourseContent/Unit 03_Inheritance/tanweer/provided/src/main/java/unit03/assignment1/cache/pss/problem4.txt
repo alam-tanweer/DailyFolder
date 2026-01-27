@@ -1,0 +1,63 @@
+public abstract class Cache {
+    protected final int CACHE_LENGTH;
+    private String[] cache;
+    private String fileName;
+    protected int cacheHit;
+    protected int cacheMiss;
+    
+    public Cache(String fileName, int length){
+        // skip
+    }
+    public String[] getCache(){
+        return cache;
+    }    
+    public String getFileName(){
+        return fileName;
+    }
+    public String getCacheElement(int i){
+        return cache[i];
+    }
+    public void setCacheElement(int i, String target){
+        cache[i] = target;
+    }
+    //used by RandomCache
+    public boolean search(String target){
+        // search cache first
+        for(int i=0; i<cache.length; i++){
+            if(cache[i].equals(target)){
+                cacheHit++;
+                return true; //cache hit
+            }
+        }
+        return fileSearch(target);
+    }
+    
+    public boolean fileSearch(String target){
+        try(
+        FileReader fileReader = new FileReader(fileName);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        ){
+            String line;
+            while((line = bufferedReader.readLine()) != null){
+                if(line.equals(target)){
+                    cacheMiss++;
+                    updateCache(target); 
+                    return true;
+                }
+            }
+        }
+        catch(IOException e){
+            System.out.println("IO exception!!");
+            System.exit(1);  
+        }
+        return false;
+    }
+
+    public abstract void updateCache(String target);
+
+    public String toString(){
+        return "Cache = " + Arrays.toString(cache)
+        + "\nHits = " + cacheHit
+        + "\nMisses = " + cacheMiss;
+    }
+}
