@@ -1,0 +1,14 @@
+Fields:
+    int CACHE_LENGTH;   
+    String[] cache;
+    String fileName;
+    int cacheHits;
+    int cacheMisses;
+
+Methods:
+    Cache(String fileName, int length)
+    getters  
+    search(String target)
+    searchFile(String target)
+    updateCache(String target)
+    toString()

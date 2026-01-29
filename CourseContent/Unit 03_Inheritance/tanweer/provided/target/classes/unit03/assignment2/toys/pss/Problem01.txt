@@ -1,0 +1,7 @@
+Name          Type                  Super Class?
+Product       class or interface    NA
+Truck         class                 NA
+Factory       interface             NA
+Microwave     class                 Product
+Microwave     class                 Factory
+  Factory

@@ -1,0 +1,138 @@
+Two teams enter the arena...
+Goats: [Goat: Hairy Potter Current HP: 100, Goat: Goatnan Current HP: 150, Goat: Hermione Grazer Current HP: 100, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 1! FIGHT!
+Goat: Hairy Potter Current HP: 100 vs. Trolling Current HP: 38
+Hairy Potter attacks with Magic Missiles (hits for [8, 6, 8] points of MAGICAL damage)
+Trolling attacks with U Mad? (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 82, Goat: Goatnan Current HP: 150, Goat: Hermione Grazer Current HP: 100, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 11, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 2! FIGHT!
+Goat: Hairy Potter Current HP: 82 vs. Trolling Current HP: 11
+Hairy Potter attacks with Magic Missiles (hits for [11, 6, 7, 6, 9] points of MAGICAL damage)
+Trolling attacks with U Mad? (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 64, Goat: Goatnan Current HP: 150, Goat: Hermione Grazer Current HP: 100, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 3! FIGHT!
+Goat: Hairy Potter Current HP: 64 vs. Trolling Current HP: 38
+Hairy Potter attacks with Magic Missiles (hits for [7, 11, 7, 8] points of MAGICAL damage)
+Trolling attacks with U Mad? (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 46, Goat: Goatnan Current HP: 150, Goat: Hermione Grazer Current HP: 100, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 4! FIGHT!
+Goat: Hairy Potter Current HP: 46 vs. Trolling Current HP: 38
+Hairy Potter attacks with Magic Missiles (hits for [10, 11, 6, 9, 6] points of MAGICAL damage)
+Trolling attacks with U Mad? (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 28, Goat: Goatnan Current HP: 150, Goat: Hermione Grazer Current HP: 100, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 5! FIGHT!
+Goat: Hairy Potter Current HP: 28 vs. Trolling Current HP: 38
+Hairy Potter attacks with Magic Missiles (hits for [10, 7, 7] points of MAGICAL damage)
+Trolling attacks with U Mad? (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 10, Goat: Goatnan Current HP: 150, Goat: Hermione Grazer Current HP: 100, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 10, Trollzord Current HP: 64, Trollzord Current HP: 64, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 6! FIGHT!
+Goat: Hairy Potter Current HP: 10 vs. Trolling Current HP: 10
+Hairy Potter attacks with Magic Missiles (hits for [11, 6, 10, 7] points of MAGICAL damage)
+Trolling attacks with U Mad? (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 150, Goat: Hermione Grazer Current HP: 100, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 64, Trollzord Current HP: 64, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 7! FIGHT!
+Goat: Goatnan Current HP: 150 vs. Trollzord Current HP: 64
+Goatnan attacks with Cleave (hits for [36] points of PHYSICAL damage)
+Trollzord attacks with Flame War (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 119, Goat: Hermione Grazer Current HP: 100, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 28, Trollzord Current HP: 64, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 8! FIGHT!
+Goat: Goatnan Current HP: 119 vs. Trollzord Current HP: 28
+Goatnan attacks with Cleave (hits for [37] points of PHYSICAL damage)
+Trollzord attacks with Flame War (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 88, Goat: Hermione Grazer Current HP: 100, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 64, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 9! FIGHT!
+Goat: Goatnan Current HP: 88 vs. Trollzord Current HP: 64
+Goatnan attacks with Cleave (hits for [43] points of PHYSICAL damage)
+Trollzord attacks with Flame War (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 57, Goat: Hermione Grazer Current HP: 100, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 21, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 10! FIGHT!
+Goat: Goatnan Current HP: 57 vs. Trollzord Current HP: 21
+Goatnan attacks with Cleave (hits for [32] points of PHYSICAL damage)
+Trollzord attacks with Flame War (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 26, Goat: Hermione Grazer Current HP: 100, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 0, Trolling Current HP: 38, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 11! FIGHT!
+Goat: Goatnan Current HP: 26 vs. Trolling Current HP: 38
+Goatnan attacks with Cleave (hits for [20] points of PHYSICAL damage)
+Trolling attacks with U Mad? (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 0, Goat: Hermione Grazer Current HP: 100, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 0, Trolling Current HP: 18, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 12! FIGHT!
+Goat: Hermione Grazer Current HP: 100 vs. Trolling Current HP: 18
+Hermione Grazer attacks with Magic Missiles (hits for [9, 6, 8, 11, 11] points of MAGICAL damage)
+Trolling attacks with U Mad? (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 0, Goat: Hermione Grazer Current HP: 82, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 38, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 13! FIGHT!
+Goat: Hermione Grazer Current HP: 82 vs. Trolling Current HP: 38
+Hermione Grazer attacks with Magic Missiles (hits for [10, 11, 8, 8, 11] points of MAGICAL damage)
+Trolling attacks with U Mad? (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 0, Goat: Hermione Grazer Current HP: 64, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 38, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 14! FIGHT!
+Goat: Hermione Grazer Current HP: 64 vs. Trolling Current HP: 38
+Hermione Grazer attacks with Magic Missiles (hits for [7, 8, 9, 10] points of MAGICAL damage)
+Trolling attacks with U Mad? (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 0, Goat: Hermione Grazer Current HP: 46, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 64, Trollzord Current HP: 64]
+
+ROUND 15! FIGHT!
+Goat: Hermione Grazer Current HP: 46 vs. Trollzord Current HP: 64
+Hermione Grazer attacks with Magic Missiles (hits for [11, 11, 8, 7] points of MAGICAL damage)
+Trollzord attacks with Flame War (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 0, Goat: Hermione Grazer Current HP: 28, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 27, Trollzord Current HP: 64]
+
+ROUND 16! FIGHT!
+Goat: Hermione Grazer Current HP: 28 vs. Trollzord Current HP: 27
+Hermione Grazer attacks with Magic Missiles (hits for [11, 7, 10, 10] points of MAGICAL damage)
+Trollzord attacks with Flame War (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 0, Goat: Hermione Grazer Current HP: 10, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 64]
+
+ROUND 17! FIGHT!
+Goat: Hermione Grazer Current HP: 10 vs. Trollzord Current HP: 64
+Hermione Grazer attacks with Magic Missiles (hits for [8, 6, 7, 11] points of MAGICAL damage)
+Trollzord attacks with Flame War (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 0, Goat: Hermione Grazer Current HP: 0, Goat: Mike Goatson Current HP: 150]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 32]
+
+ROUND 18! FIGHT!
+Goat: Mike Goatson Current HP: 150 vs. Trollzord Current HP: 32
+Mike Goatson attacks with Cleave (hits for [16] points of PHYSICAL damage)
+Trollzord attacks with Flame War (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 0, Goat: Hermione Grazer Current HP: 0, Goat: Mike Goatson Current HP: 119]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 16]
+
+ROUND 19! FIGHT!
+Goat: Mike Goatson Current HP: 119 vs. Trollzord Current HP: 16
+Mike Goatson attacks with Cleave (hits for [44] points of PHYSICAL damage)
+Trollzord attacks with Flame War (hits for [25] points of MAGICAL damage)
+Goats: [Goat: Hairy Potter Current HP: 0, Goat: Goatnan Current HP: 0, Goat: Hermione Grazer Current HP: 0, Goat: Mike Goatson Current HP: 88]
+Trolls: [Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trolling Current HP: 0, Trollzord Current HP: 0, Trollzord Current HP: 0]
+
+The heroic goats are victorious!

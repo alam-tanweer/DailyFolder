@@ -1,0 +1,5 @@
+Name          Type       Super Class?
+Toy           abstract   NA
+Robot         class      Toy
+Doll          class      Toy
+Action Figure class      Doll

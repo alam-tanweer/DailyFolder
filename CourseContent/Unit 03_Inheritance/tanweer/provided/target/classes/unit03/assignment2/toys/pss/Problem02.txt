@@ -1,0 +1,13 @@
+Class      State            Behavior
+Product    name             <none>        
+           product code
+           msrp
+
+Microwave  name
+           product code
+           msrp
+
+Factory    <none>           manufature product
+
+Microwave  <none>?          manufacture product
+  Factory

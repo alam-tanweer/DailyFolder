@@ -1,0 +1,122 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.6">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1699" dy="1068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="hKvbi4zKiiBmEU1pwalQ-0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeWidth=2;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Attack&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- name: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- damageType: DamageType&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- hits: int[]&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Attack(name: String,&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; damageType: DamageType,&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; hits: int)&lt;br&gt;+ getName(): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getDamageType(): DamageType&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getHits(): int[]&lt;/p&gt;" vertex="1">
+          <mxGeometry height="180" width="195" x="25" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="n-GCH8SEAFZs5eheO8Up-0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeWidth=2;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;DamageType&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ &lt;u&gt;PHYSICAL&lt;/u&gt;&lt;br&gt;+ &lt;u&gt;MAGICAL&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ &lt;u&gt;POISON&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ &lt;u&gt;HOLY&lt;/u&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ &lt;u&gt;ELEMENTAL&lt;/u&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="128" width="120" x="62.5" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n-GCH8SEAFZs5eheO8Up-2" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hKvbi4zKiiBmEU1pwalQ-0" style="endArrow=open;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;endSize=12;strokeWidth=2;" target="n-GCH8SEAFZs5eheO8Up-0" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="410" as="sourcePoint" />
+            <mxPoint x="440" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n-GCH8SEAFZs5eheO8Up-5" parent="WIyWlLk6GJQsqaUBKTNV-1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeWidth=2;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Mage&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;lt;&amp;lt;none&amp;gt;&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Mage(name:String)&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+&amp;nbsp;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;attack(): Attack&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ takeDamage(attack: Attack)&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="260" width="190" x="310" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="n-GCH8SEAFZs5eheO8Up-6" parent="WIyWlLk6GJQsqaUBKTNV-1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeWidth=2;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Fighter&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&amp;lt;&amp;lt;none&amp;gt;&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Fighter(name:String)&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+&amp;nbsp;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;attack(): Attack&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ takeDamage(attack: Attack)&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="260" width="190" x="550" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="XjlVn6yyYETm6k_oFAs2-2" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/div&gt;Goat" vertex="1">
+          <mxGeometry height="272" width="230" x="430" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="XjlVn6yyYETm6k_oFAs2-3" parent="XjlVn6yyYETm6k_oFAs2-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p style=&quot;text-wrap-mode: nowrap; margin: 0px 0px 0px 4px;&quot;&gt;-&amp;nbsp;&lt;u&gt;NAME&lt;/u&gt;:&amp;nbsp; String&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; margin: 0px 0px 0px 4px;&quot;&gt;-&amp;nbsp;&lt;u&gt;MAX_HP&lt;/u&gt;: int&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; margin: 0px 0px 0px 4px;&quot;&gt;#&amp;nbsp;&lt;u&gt;currentHP&lt;/u&gt;: int&lt;/p&gt;" vertex="1">
+          <mxGeometry height="74" width="230" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XjlVn6yyYETm6k_oFAs2-4" parent="XjlVn6yyYETm6k_oFAs2-2" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="XjlVn6yyYETm6k_oFAs2-5" parent="XjlVn6yyYETm6k_oFAs2-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Goat(name:String)&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ getName(): String()&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ getCurrentHP(): int&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ getMaxHP(): int&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;i&gt;+&amp;nbsp;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;attack(): Attack&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;i&gt;+ takeDamage(attack: Attack)&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ heal(amount: int)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ isConscious()&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="150" width="230" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="XjlVn6yyYETm6k_oFAs2-6" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="n-GCH8SEAFZs5eheO8Up-5" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.491;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="XjlVn6yyYETm6k_oFAs2-5" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="470" y="540" as="sourcePoint" />
+            <mxPoint x="630" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XjlVn6yyYETm6k_oFAs2-7" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="650" y="590" as="sourcePoint" />
+            <mxPoint x="540" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XjlVn6yyYETm6k_oFAs2-5" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=-0.009;exitY=0.12;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.99;entryY=0.294;entryDx=0;entryDy=0;entryPerimeter=0;" target="hKvbi4zKiiBmEU1pwalQ-0" value="Use">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="190" y="500" as="sourcePoint" />
+            <mxPoint x="350" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-6" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/div&gt;Troll" vertex="1">
+          <mxGeometry height="272" width="370" x="950" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-7" parent="VbaV0zEOt8zZaUaAz_5x-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p style=&quot;text-wrap-mode: nowrap; margin: 0px 0px 0px 4px;&quot;&gt;-&amp;nbsp;&lt;u&gt;NAME&lt;/u&gt;:&amp;nbsp; String&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; margin: 0px 0px 0px 4px;&quot;&gt;-&amp;nbsp;&lt;u&gt;MAX_HP&lt;/u&gt;: int&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; margin: 0px 0px 0px 4px;&quot;&gt;-&amp;nbsp;&lt;span style=&quot;background-color: rgb(30, 30, 30); color: rgb(212, 212, 212); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space-collapse: preserve;&quot;&gt;regenAmount: double&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; margin: 0px 0px 0px 4px;&quot;&gt;#&amp;nbsp;&lt;u&gt;currentHP&lt;/u&gt;: int&lt;/p&gt;" vertex="1">
+          <mxGeometry height="74" width="370" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-8" parent="VbaV0zEOt8zZaUaAz_5x-6" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="370" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-9" parent="VbaV0zEOt8zZaUaAz_5x-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Troll(name:String, MaxHP: int, regenAmount: double)&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ getName(): String()&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ getCurrentHP(): int&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ getMaxHP(): int&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;i&gt;+&amp;nbsp;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;attack(): Attack&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;i&gt;+ takeDamage(attack: Attack)&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ regenerate(amount: int)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ isVanquished()&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;# reduceHP(amount: int)&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="150" width="370" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-10" parent="WIyWlLk6GJQsqaUBKTNV-1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeWidth=2;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Trolling&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;lt;&amp;lt;none&amp;gt;&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Trolling(name:String)&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+&amp;nbsp;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;attack(): Attack&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ takeDamage(attack: Attack)&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="260" width="190" x="890" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-11" parent="WIyWlLk6GJQsqaUBKTNV-1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeWidth=2;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Trollzord&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;lt;&amp;lt;none&amp;gt;&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Trollzord(name:String)&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;+&amp;nbsp;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;attack(): Attack&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ takeDamage(attack: Attack)&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="260" width="190" x="1160" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-12" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="VbaV0zEOt8zZaUaAz_5x-10" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.542;exitY=-0.015;exitDx=0;exitDy=0;exitPerimeter=0;" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="720" y="510" as="sourcePoint" />
+            <mxPoint x="1069" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-13" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="VbaV0zEOt8zZaUaAz_5x-11" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.447;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.476;entryY=1.013;entryDx=0;entryDy=0;entryPerimeter=0;" target="VbaV0zEOt8zZaUaAz_5x-9" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="770" y="600" as="sourcePoint" />
+            <mxPoint x="930" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-14" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;div&gt;Combatant&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="190" x="720" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-15" parent="VbaV0zEOt8zZaUaAz_5x-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;none&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="190" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-16" parent="VbaV0zEOt8zZaUaAz_5x-14" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="38" width="190" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-17" parent="VbaV0zEOt8zZaUaAz_5x-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p style=&quot;text-wrap-mode: nowrap; border-color: rgb(218, 218, 218); margin: 0px 0px 0px 4px;&quot;&gt;&lt;i&gt;+&amp;nbsp;&lt;span style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;attack(): Attack&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: rgb(218, 218, 218); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;&lt;i&gt;+ takeDamage(attack: Attack)&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-wrap-mode: nowrap; border-color: rgb(218, 218, 218); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;&lt;i&gt;+ getName()&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="56" width="190" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-18" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XjlVn6yyYETm6k_oFAs2-3" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.489;entryY=0.964;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.987;exitY=0.284;exitDx=0;exitDy=0;exitPerimeter=0;" target="VbaV0zEOt8zZaUaAz_5x-17" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="740" y="360" as="sourcePoint" />
+            <mxPoint x="900" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-21" connectable="0" parent="VbaV0zEOt8zZaUaAz_5x-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Implements" vertex="1">
+          <mxGeometry relative="1" x="-0.1688" y="2" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-19" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="VbaV0zEOt8zZaUaAz_5x-8" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.568;entryY=1.018;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.019;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" target="VbaV0zEOt8zZaUaAz_5x-17" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="800" y="383" as="sourcePoint" />
+            <mxPoint x="956" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbaV0zEOt8zZaUaAz_5x-20" connectable="0" parent="VbaV0zEOt8zZaUaAz_5x-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Implements" vertex="1">
+          <mxGeometry relative="1" x="0.0454" y="-1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

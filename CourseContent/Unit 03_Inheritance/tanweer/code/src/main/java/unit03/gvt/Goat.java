@@ -1,6 +1,6 @@
 package unit03.gvt;
 
-public abstract class Goat {
+public abstract class Goat implements Combatant {
     //3.10
     private String name;
     private int maximumHP;

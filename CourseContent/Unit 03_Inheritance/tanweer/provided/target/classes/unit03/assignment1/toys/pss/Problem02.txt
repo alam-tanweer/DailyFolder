@@ -1,0 +1,11 @@
+Class    State            Behavior
+Toy      product code     play
+         name
+         msrp
+
+Robot    charge           play
+         sound
+
+Doll     hair color       play
+         eye color
+         phrases
