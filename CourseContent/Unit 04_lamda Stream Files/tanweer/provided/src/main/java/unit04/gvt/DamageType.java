@@ -1,0 +1,9 @@
+package unit04.gvt;
+
+public enum DamageType {
+    MAGICAL,
+    PHYSICAL,
+    HOLY,
+    POISON,
+    ELEMENTAL
+}

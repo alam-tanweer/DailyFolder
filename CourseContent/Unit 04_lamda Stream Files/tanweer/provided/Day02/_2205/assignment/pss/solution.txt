@@ -1,0 +1,39 @@
+# Problem 1
+
+new Ability () {
+    public void use(List<Troll> enemies, List<Goat> party) {
+        Troll target = getRandomTarget (enemies);
+        int [] hits = {5};
+        Attack attack = new Attack ("", hits, DamageType.PHYSICAL)
+        target.takeDamage (attack);
+        removeVanquished (enemies, target);
+    }
+};
+
+# Problem 2
+(enimies, party) -> {
+    Troll target = getRandomTarget (enemies);
+    int [] hits = {5};
+    Attack attack = new Attack ("", hits, DamageType.PHYSICAL)
+    target.takeDamage (attack);
+    removeVanquished (enemies, target);    
+}
+
+# Problem 3
+for 0 to 3:
+    if num enimies is greater than 0:
+        target = random enemy
+        hit = 9
+        attack = new Attack ("", hit, physical)
+        target takes damage from attack
+        remove vanquished enemy from enemies
+
+# Problem 4:
+(enemies, party) -> {
+    for (int i = 0; i < 4 && i < enemies.size(); i++) {
+        Troll target = getRandomTarget (enemies);
+        int [] hits = {9};
+        target.takeDamage (new Attack ("", hits, DamageType.MAGICAL));
+        removeVanquished (enemies, target);
+    }
+}
