@@ -67,8 +67,9 @@ public class ExpressionTree {
                         else if (operator.equals("^")) {
                             final Expression left = operands[0];
                             final Expression right = operands[1];
-                            // DoubleBinaryOperator op = Math::pow;
-                            // expression = () ->  op.applyAsDouble(left.evaluate() , right.evaluate());
+                            DoubleBinaryOperator op = Math::pow;
+                            expression = () ->  op.applyAsDouble(left.evaluate() , right.evaluate());
+                            
                             PowerExpr pe = Math::pow;
                             expression = () -> pe.powerup(left.evaluate(),right.evaluate());
 

@@ -25,27 +25,40 @@ public class Example {
 
         //Functional Interface
         // FunctInterface fi = (x,y) -> x + y;
-        FunctInterface fi = (x,y) -> {
-            System.out.println("FI : " + (x + y));
-            return x + y;
-        };
+        // FunctInterface fi = (x,y) -> {
+        //     System.out.println("FI : " + (x + y));
+        //     return x + y;
+        // };
 
         // FunctInterface fi = new FunctInterface() {
         //     public int add(int a, int b) {
         //         return a + b;
         //     }
         // };
-        System.out.println(fi.add(10, 10));
+        // System.out.println(fi.add(10, 10));
 
         //Method reference
         FunctInterface fm = Example::addNumbers;
         System.out.println("Adding numbers : " + fm.add(2,2));
 
-        computeAndPrint((x,y) -> "Result: " + (x+y));
 
-        Calculator calc = new Calculator();
-        computeAndPrint(calc::add);
-        computeAndPrint(Calculator::multiply);   //Static reference. No need to create instance.
+        //Using Lamda
+        Computation addComp = (x,y) -> "Result : " + (x+y);
+        Computation subComp = (x,y) -> "Result : " + (x-y);
+
+        System.out.println(addComp.compute(2, 2));
+        System.out.println(subComp.compute(2, 2));
+
+
+
+        // computeAndPrint((x,y) -> "Result: " + (x+y));
+
+        // Calculator calc = new Calculator();
+        // computeAndPrint(calc::add);
+        // computeAndPrint(Calculator::multiply);   //Static reference. No need to create instance.
+
+        // computeAndPrint(calc::add,10,10);
+        // computeAndPrint(Calculator::multiply, 10,10);   //Static reference. No need to create instance.        
 
     }
 
@@ -57,4 +70,9 @@ public class Example {
         String result = c.compute(10, 2);
         System.out.println(result);
     }
+
+    public static void computeAndPrint(Computation c, double a, double b){
+        String result = c.compute(a,b);
+        System.out.println(result);
+    }    
 }
