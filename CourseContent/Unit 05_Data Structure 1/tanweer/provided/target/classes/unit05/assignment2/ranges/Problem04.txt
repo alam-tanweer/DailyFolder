@@ -1,0 +1,17 @@
+public static int fibonacci(int n) {
+    int fn_1 = 1;
+    int fn_2 = 0;
+
+    while(n > 1) {
+        int temp = fn_1;
+        fn_1 = fn_1 + fn_2;
+        fn_2 = temp;
+        n--;
+    }
+
+    if(n == 1) {
+        return fn_1;
+    } else {
+        return fn_2;
+    }
+}

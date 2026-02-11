@@ -1,0 +1,10 @@
+    @Override
+    public E get(int index) {
+        Node<E> current = head;
+        while(index > 0) {
+            current = current.getNext();
+            index--;
+        }
+
+        return current.getValue();
+    }

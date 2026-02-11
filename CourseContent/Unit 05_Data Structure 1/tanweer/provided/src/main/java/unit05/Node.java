@@ -35,9 +35,15 @@ public class Node<T> {
     }
 
     public static void main(String[] args) {
+        // Node<String> node1 = new Node<String>("Node 1");
+        // Node<String> node2 = new Node<String>("Node 2", node1);
+        // Node<String> node3 = new Node<String>("Node 3", node2);
+
         Node<String> node1 = new Node<String>("Node 1");
-        Node<String> node2 = new Node<String>("Node 2", node1);
-        Node<String> node3 = new Node<String>("Node 3", node2);
-        System.out.println(node3);
+        Node<String> node2 = new Node<String>("Node 2");
+        node1.setNext(node2);
+        Node<String> node3 = new Node<String>("Node 3");
+        node2.setNext(node3);
+        System.out.println(node1);
     }
 }

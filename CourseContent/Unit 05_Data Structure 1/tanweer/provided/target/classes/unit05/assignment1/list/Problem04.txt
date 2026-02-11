@@ -1,0 +1,19 @@
+ @Test
+    public void append() {
+        List<String> list = new LinkedList<>();
+
+        list.append("abc");
+
+        assertEquals(1, list.size());
+        assertEquals("abc", list.get(0));
+    }
+
+    @Test
+    public void get() {
+        List<String> list = new LinkedList<>();
+        list.append("abc");
+
+        String actual = list.get(0);
+
+        assertEquals("abc", actual);
+    }

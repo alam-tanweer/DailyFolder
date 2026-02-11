@@ -1,0 +1,12 @@
+public class LinkedList<E> implements List<E> {
+
+    private Node<E> head;
+    private Node<E> tail;
+    private int size;
+
+    public LinkedList() {
+        head = null;
+        tail = null;
+        size = 0;
+    }    
+}
