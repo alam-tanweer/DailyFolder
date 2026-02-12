@@ -1,4 +1,4 @@
-package unit05;
+package unit05.gen;
 
 public class Node<T> {
     private T value;

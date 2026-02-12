@@ -1,0 +1,18 @@
+1. Node Class
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(T value) {
+        this.value = value;
+    }
+
+    public void setNext(Node<T> next) {
+        this.next = next;
+    }
+
+    public Node getNext() {
+        return next;
+    }
+
+
