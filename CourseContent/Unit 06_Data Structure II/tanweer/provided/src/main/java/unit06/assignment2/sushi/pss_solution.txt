@@ -1,0 +1,64 @@
+#1
+
+Sushi - no data structures
+Order/Bag - Stack
+Store/Display - Map
+
+#2
+
+public class SushiItem implements Comparable <SushiItem>{
+    private final int number;
+    private final int weight;
+    private final int cost;
+
+    public SushiItem (int number) {
+        // It's fine if the students skip the details here, they don't really 
+        // have enough information in the PSS to know all the details.
+        Random random = new Random ();
+        this.number = number;
+        weight = random.nextInt(80) + 20;
+        cost = random.nextInt (30) + 10;
+    }
+
+    @Override
+    public String toString() {
+        return String.format ("Sushi{number=%d, weight=%d grams, $%d}", number, weight, cost);
+    }
+
+    @Override
+    public int compareTo (SushiItem o) {
+        return o.weight - weight;
+    }
+
+#3
+
+    Set<Integer> order = new HashSet<>();
+    for (int i = 0; i < numItems; i++) {
+        while (order.size() != numItems + 1) {
+            order.add (random.nextInt (displayCase.size()));
+        }
+    }
+
+#4
+
+// At a minimum main's logic should look like
+
+// create and fill shop/display case
+DisplayCase case = new DisplayCase ();
+
+// determine how many items the coustomer will order (3-8)
+int numItems = random.nextInt (5) + 3;
+
+// randomly choose that many unique numbers from the case
+Set<Integer> wantedNumbers = takeOrder (numItems);
+
+//print the selected numbers
+for (int number: wantedItems)
+    System.out.print (number + " ");
+
+// have the cashier remove the items from the dispaly and add to the order
+Order order = bagOrder (wantedItems);
+
+// Eat the items
+while (!order.getBag().isEmpty ())
+    System.out.print (order.removeItem () + " yum!");
