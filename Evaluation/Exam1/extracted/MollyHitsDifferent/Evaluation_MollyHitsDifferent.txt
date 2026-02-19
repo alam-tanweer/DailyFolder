@@ -1,0 +1,25 @@
+Total
+
+Question 1 -> 13 + 12 + 9 + 9 -> 43
+
+Question 2 -> 10 + 10 + 15 + 15 -> 50
+
+
+Question 1
+
+Part 1:
+You declared the class as abstract, but no abstract method is defined. getEffic() should be declared as an abstract method.
+
+Fuel efficiency is currently being set in the constructor, which limits flexibility. Instead, fuel efficiency should be derived through a getFuelEfficiency() method using the appropriate parameters for each Vehicle type.
+
+Part 2:
+The equals() method is implemented incorrectly. The method signature must be:
+
+public boolean equals(Object other)
+
+
+Part 3:
+This part should have been implemented in the VehicleDemo class as required. In addition, your program does not print the Vehicle with the highest fuel efficiency.
+
+Part 4:
+The abstract notation for the Vehicle class is incorrect in the UML diagram. It should appear in the top section where the class name is defined.

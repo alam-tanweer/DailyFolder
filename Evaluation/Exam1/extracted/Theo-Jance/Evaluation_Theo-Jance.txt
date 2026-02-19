@@ -1,0 +1,15 @@
+Total
+
+Question 1 -> 15 + 15 + 10 + 10 --> 48
+
+Question 2 -> 10 + 10 + 15 + 15 --> 50
+
+
+Question 1
+
+Part 3:
+The logic to determine the Vehicle with the highest fuel efficiency is missing in VehicleDemo. 
+This value must be calculated programmatically using your array and a loop. It should not be hardcoded.
+
+Part 4:
+The UML arrow notation is incorrect. An inheritance (extends) relationship must be shown with a closed arrow pointing to the parent class.

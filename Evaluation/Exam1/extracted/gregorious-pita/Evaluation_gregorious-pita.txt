@@ -1,0 +1,31 @@
+Total
+
+Question 1 -> 12 + 15 + 10 + 7 - 44
+
+Question 2 -> 10 + 10 + 15 + 15 - 50
+
+
+Question 1
+
+Part 1: 
+For Car, Truck and Van, It calculate fuel efficieny through a getter method, rather than performing in constructgor.
+Using getting method will allow you to get the efficieny based on additional criteria like # of passenger, cargo weight based on 
+Vehile type.
+
+Part 2:
+
+Part 3:
+
+Part 4:
+UML Diagram is not correct. Please refer to class notes or reach out to me for any clarification
+
+
+Question 2
+
+Part 1: 
+
+Part 2:
+
+Part 3:
+
+Part 4:

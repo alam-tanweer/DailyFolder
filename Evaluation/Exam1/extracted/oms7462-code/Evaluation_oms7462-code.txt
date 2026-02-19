@@ -1,0 +1,15 @@
+Total
+
+Question 1 -> 15 + 15 + 10 + 10 --> 48
+
+Question 2 -> 10 + 10 + 15 + 15 --> 50
+
+
+Question 1
+
+Part 3:
+There is no need to override toString() and equals() in the child classes if the parent class implementation already provides the correct behavior.
+Additionally, your equals() method currently compares only fuel efficiency. It should also verify that the Vehicle names are equal.
+
+Part 4:
+The VehicleDemo class is missing from the UML diagram and should be included.

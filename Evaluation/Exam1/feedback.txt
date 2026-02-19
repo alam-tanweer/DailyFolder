@@ -1,0 +1,23 @@
+Question 1
+
+Part 1: 
+Fuel efficiency is a calculated value and should not be stored as a directly settable field. Providing a setter would allow invalid or arbitrary values. Instead, implement a getFuelEfficiency() method that returns the value computed from the appropriate formula.
+
+Part 2:
+
+Part 3:
+
+Part 4:
+Abstract method in UML is represented using notation <<abstract>>
+VehicleDemo does not extends Vehicle. It uses it. It is a weak associattion link
+
+
+Question 2
+
+Part 1: 
+
+Part 2:
+
+Part 3:
+
+Part 4:

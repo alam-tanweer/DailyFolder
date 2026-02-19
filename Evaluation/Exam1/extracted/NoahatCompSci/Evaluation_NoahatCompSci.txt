@@ -1,0 +1,21 @@
+Total
+
+Question 1 -> 12 + 15 + 10 + 9  --> 46
+
+Question 2 -> 10 + 10 + 15 + 15 --> 50
+
+
+Question 1
+
+Part 1:
+Fuel efficiency is a calculated value and should not be stored as a directly settable field. Providing a setter allows invalid or arbitrary values to be assigned. Instead, implement a getFuelEfficiency() method that computes and returns the value using the appropriate formula.
+
+In the Van and Truck classes, setRating is being called in the constructor while fuel efficiency is also computed in calculateFuelEfficiency(). This duplicates work. The setter should be removed, and fuel efficiency should be derived only through calculateFuelEfficiency().
+
+Part 4:
+VehicleDemo does not extend Vehicle; it uses it. This relationship should be represented in UML as a weak association/dependency link with an open arrow, not as an inheritance relationship.
+
+Question 2
+
+Part 1:
+When your program expects user input, it should display a prompt describing what the user needs to enter. Without a prompt, the user has no indication that input is required or what value is expected.

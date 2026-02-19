@@ -26,8 +26,9 @@ public class ArrayQueue implements Queue {
             //     bigger[destination] = elements[source];
             // }
             int destination = 0;
-            for (int counter = front;counter <= size;counter++){
-                bigger[destination] = elements[counter % size];
+            for (int counter = 0;counter <= size;counter++){
+                int index = counter + front;
+                bigger[destination] = elements[index % size];
                 destination++;
             }
 

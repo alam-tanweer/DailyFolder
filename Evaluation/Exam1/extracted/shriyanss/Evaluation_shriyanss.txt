@@ -1,0 +1,12 @@
+Total
+
+Question 1 -> 15 + 15 + 10 + 10 --> 50
+
+Question 2 -> 10 + 10 + 15 + 15 --> 50
+
+
+Question 2
+
+Part 1:
+When your program expects input from the user, you should display 
+a prompt message indicating what the user should enter. Without a prompt, the user has no indication that input is required or what value is expected.

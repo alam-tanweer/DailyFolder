@@ -1,0 +1,27 @@
+Total
+
+Question 1 -> 12 + 12 + 6 + 10 -> 40
+
+Question 2 -> 10 + 10 + 15 + 15 -> 25
+
+
+Question 1
+
+Part 1:
+A better design would use Vehicle as an abstract class. Common attributes (such as name) and shared methods (getName(), toString(), and equals()) should be implemented in the parent class so that child classes can inherit them.
+
+Part 2:
+The following methods should not be declared in the Vehicle interface. They are already defined in the Object class, which every class inherits. Instead, you should override them in your classes to provide specific behavior:
+
+public boolean equals(Object obj);
+public String toString();
+
+
+The equals() method is also missing in the Truck and Van classes.
+
+Part 3:
+The implementation of the VehicleDemo class is incomplete.
+
+Question 2
+
+The program is incomplete. A majority of the required implementation is missing.

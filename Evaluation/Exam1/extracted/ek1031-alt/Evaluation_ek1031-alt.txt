@@ -1,0 +1,32 @@
+Total
+
+Question 1 -> 20 + 10 --> 30
+
+Question 2 -> 10 + 10 + 15 + 15 --> 20
+
+
+Question 1
+
+Part 1: 
+Vehicle -> fuelEfficiancy() should be an abstract method. Majority of implementation missing
+
+Part 2:
+
+Part 3:
+
+Part 4:
+
+
+
+Question 2
+
+Incomplete program. Majority of Implementation missing
+
+
+Part 1: 
+
+Part 2:
+
+Part 3:
+
+Part 4:

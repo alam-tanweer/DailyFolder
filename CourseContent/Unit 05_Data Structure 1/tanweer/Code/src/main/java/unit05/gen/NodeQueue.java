@@ -1,5 +1,7 @@
 package unit05.gen;
 
+import java.util.Iterator;
+
 public class NodeQueue<T> implements Queue<T> {
     /**
      * The node at the front of the queue.
@@ -59,6 +61,10 @@ public class NodeQueue<T> implements Queue<T> {
         return "Queue{" + this.size() + ", " + this.front + "}";
     }
 
+    @Override
+    public Iterator<T> iterator(){
+        return new NodeIterator<>(front);
+    }
     public static void main(String[] args) {
         NodeQueue<String> q = new NodeQueue<String>();
         q.enqueue("1");

@@ -1,6 +1,8 @@
 package unit05.gen;
 
-public interface Queue<E> {
+import java.util.Iterator;
+
+public interface Queue<E>  extends Iterable<E> {
     /**
      * Adds a new value to the queue.
      * 
@@ -21,4 +23,8 @@ public interface Queue<E> {
      * @return The size of the queue.
      */
     int size();
+
+    default Iterator<E> iterator(){
+        throw new UnsupportedOperationException("Iterator is not supported.");
+    }
 }

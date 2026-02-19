@@ -1,0 +1,17 @@
+Total
+
+Question 1 -> 10 + 10 + 10 + 9 -> 39
+
+Question 2 -> 10 + 10 + 15 + 15 -> 50
+
+
+Question 1
+
+Part 1:
+The object-oriented design is not applied correctly. Common attributes such as name and fuel efficiency, along with shared methods like getName(), should be defined in the abstract Vehicle class so they can be inherited by all subclasses.
+
+Part 2:
+The equals() method is commented out and would not compile as written. Comparing strings using this.name == other.name is incorrect. You must first cast other to a Vehicle type and then compare names using .equals().
+
+Part 4:
+The UML arrow used to show the dependency for VehicleDemo is incorrect. This is a weak dependency and should be represented with a dashed line.

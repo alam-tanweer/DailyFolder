@@ -1,0 +1,22 @@
+Total
+
+Question 1 -> 12 + 11 + 7 + 5 --> 35
+
+Question 2 -> 10 + 10 + 15 + 15 --> 50
+
+
+Question 1
+
+Part 1:
+There is no need to override toString() and equals() in the child classes if the parent class implementation already provides the correct behavior.
+
+In the Car class, you calculate this.erating = miles / gallons, but the values for miles and gallons are never assigned. The same issue appears in the Truck and Van classes — the required inputs for fuel efficiency are not properly initialized.
+
+Part 2:
+The equals() method implementation is missing. The program is currently using the default Object.equals() behavior, which is incorrect. The method should compare both the Vehicle name and fuel efficiency.
+
+Part 3:
+VehicleDemo is only partially implemented.
+
+Part 4:
+The UML diagram is incomplete. The child classes are missing.
