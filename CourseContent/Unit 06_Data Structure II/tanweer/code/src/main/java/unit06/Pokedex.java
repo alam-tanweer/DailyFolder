@@ -44,8 +44,11 @@ public class Pokedex {
         // pokedex.addPokemon(25);
         // pokedex.addPokemon(136);
         // pokedex.addPokemon(2);
-        Arrays.stream(new int[]{39,4,147,75,129,8,146,020,026,36,132,93,1,145,174,50,196,3,151,19})
+        int[] pokemons = new int[]{39,4,147,75,129,8,146,020,026,36,132,93,1,145,174,50,196,3,151,19};
+        Arrays.stream(pokemons)
             .forEach(item -> pokedex.addPokemon(item));
+
+        Arrays.sort(pokemons);
 
         System.out.println(pokedex);
         System.out.println(130 + ": " + pokedex.containsPokemon(130));
