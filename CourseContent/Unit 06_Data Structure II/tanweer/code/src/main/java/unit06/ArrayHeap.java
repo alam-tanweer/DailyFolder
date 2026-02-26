@@ -36,11 +36,11 @@ public class ArrayHeap implements Heap{
         int child = size;
         int parent = (child -1)/2;
         while(array[parent] > array[child]){
-            System.out.println("Before swap: " + Arrays.toString(array));    
+            // System.out.println("Before swap: " + Arrays.toString(array));    
             swap(parent,child);
             child = parent;
             parent = (child -1)/2;    
-            System.out.println("After swap: " + Arrays.toString(array));        
+            // System.out.println("After swap: " + Arrays.toString(array));        
         }
         System.out.println("Loop done");
 
