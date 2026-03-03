@@ -1,0 +1,22 @@
+You run a package company.  Each package has 3 characteristics: Priorty, Length, and
+Weight.  A Package class and Priority enum has been provided.  For each part, make the
+necessary updates to support the functionality.  Updates may include updating the Package
+class, updating the Priority enum, or adding new types (classes, interfaces, enums).
+
+Priority sort order is always High, Medium, and then Low.
+
+Part 1
+In the factory, packages are sorted according to the Natural Order of Priority.  The
+Length and Weight do not matter. After making your changes, test that your that
+packages are sorted correctly by uncommenting and updating the Collections.sort() method
+in main for Part 1.
+
+Part 2
+When loading onto a truck, packages are sorted according to the Priority and then by
+Length (ascending).  After making your changes, test that your that packages are sorted
+correctly by uncommenting and updating the Collections.sort() method in main for Part 2.
+
+Part 3
+When loading onto a plane, packages are sorted according to the Priority and then by
+Weight (descending).  After making your changes, test that your that packages are sorted
+correctly by uncommenting and updating the Collections.sort() method in main for Part 3.

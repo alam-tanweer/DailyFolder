@@ -12,14 +12,15 @@ public class Grocery {
         this.weight = weight;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof Grocery other) {
-        return name.equals(other.name) && weight == other.weight;
-        }
-        return false;
-    }
+    // @Override
+    // public boolean equals(Object obj) {
+    //     if (obj instanceof Grocery other) {
+    //     return name.equals(other.name) && weight == other.weight;
+    //     }
+    //     return false;
+    // }
 
+    
     // public int hashCode() {
     //     return name.hashCode() * Double.valueOf(weight).hashCode();  
     // }

@@ -1,5 +1,7 @@
 package unit07;
 
+import java.util.Objects;
+
 import unit07.sets.*;
 
 public class Grocery {
@@ -24,6 +26,8 @@ public class Grocery {
         return name.hashCode() * Double.valueOf(weight).hashCode();  
         // Need to convert to Double type for hashcode.
         // return name.hashCode() ;
+        
+
     }
 
     @Override
@@ -43,5 +47,6 @@ public class Grocery {
 
         System.out.println("");
         System.out.println(grocerySet);
+        // System.out.println(Objects.hash("abc",123));
     }
 }

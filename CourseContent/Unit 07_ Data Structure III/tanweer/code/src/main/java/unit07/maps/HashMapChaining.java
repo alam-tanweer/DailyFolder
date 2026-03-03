@@ -46,9 +46,11 @@ public class HashMapChaining<K, V> implements Map<K, V> {
             for (int i = 0; i < oldElements.size() * 2; i++) {
                 newElements.add(new ArrayList<>());
             }
-            elements = Collections.unmodifiableList(newElements);
+            // elements = Collections.unmodifiableList(newElements);
+            elements = newElements;
+
             // Rehash all existing entries into the new bucket structure.
-            int oldSize = size;
+            int oldSize = size; // Not needed.
             size = 0;
 
             for (List<Element> bucket : oldElements) {
@@ -57,7 +59,7 @@ public class HashMapChaining<K, V> implements Map<K, V> {
                 }
             }
             // size should equal oldSize after rehashing
-            assert size == oldSize;
+            assert size == oldSize; //Not needed.
         }
     }
 
@@ -164,7 +166,7 @@ public class HashMapChaining<K, V> implements Map<K, V> {
     public String toString() {
         String[] elements = new String[size];
         for (int i = 0, bucketIndex = 0; bucketIndex < this.elements.size(); bucketIndex++) {
-            System.out.println("Value stored at index : " + bucketIndex);
+            // System.out.println("Value stored at index : " + bucketIndex);
             for (Element element : this.elements.get(bucketIndex)) {
                 System.out.println(element);
                 elements[i++] = element.toString();
@@ -178,19 +180,23 @@ public class HashMapChaining<K, V> implements Map<K, V> {
         map.add("one", 1);
         map.add("two", 2);
         map.add("three", 3);
+        
+        System.out.println("");        
+        System.out.println("Size: " + map.size + "== " + map);        
         map.add("four", 4);
         System.out.println("");
-        System.out.println(map);
+        System.out.println("Size: " + map.size);            
+        System.out.println("Size: " + map.size + "== " + map);    
 
         // System.out.println("Size: " + map.size()); // Size: 3
         // System.out.println("Contains 'two': " + map.containsKey("two")); // true
         // System.out.println("Value for 'three': " + map.get("three")); // 3
 
-        System.out.print("Keys: ");
-        for (String key : map) {
-            System.out.print(key + " ");
-        }
-        System.out.println();
+        // System.out.print("Keys: ");
+        // for (String key : map) {
+        //     System.out.print(key + " ");
+        // }
+        // System.out.println();
 
         // map.remove("one");
         // System.out.println("Size after removing 'one': " + map.size()); // Size: 2

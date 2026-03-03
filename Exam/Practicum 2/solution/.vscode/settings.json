@@ -1,0 +1,8 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "files.autoSave": "afterDelay",
+    "github.copilot.enable": {
+        "*": false
+    },
+    "task.allowAutomaticTasks": "on",
+}
