@@ -25,7 +25,7 @@ public class Grocery {
     public int hashCode() {
         return name.hashCode() * Double.valueOf(weight).hashCode();  
         // Need to convert to Double type for hashcode.
-        // return name.hashCode() ;
+        // return name.hashCode();
         
 
     }
