@@ -1,0 +1,18 @@
+Falco has arrived at the bridge.
+Deirdre has arrived at the bridge.
+Marly has arrived at the bridge.
+Deirdre is starting to cross.
+Falco is starting to cross.
+Marly is starting to cross.
+         Marly 1 seconds.
+         Deirdre 1 seconds.
+         Falco 1 seconds.
+         Deirdre 2 seconds.
+         Falco 2 seconds.
+         Marly 2 seconds.
+         Falco 3 seconds.
+         Deirdre 3 seconds.
+Marly leaves at SICSTINE.
+Falco leaves at MERCTRAN.
+         Deirdre 4 seconds.
+Deirdre leaves at MERCTRAN.

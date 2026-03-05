@@ -1,0 +1,11 @@
+    public static void main (String[] args) {
+       List <Woolie> woolies = new ArrayList<>();
+       woolies.add (new Woolie ("Falco", 4, Woolie.city.MERCTRAN)); 
+       woolies.add (new Woolie ("Marly", 3, Woolie.city.SICSTINE)); 
+       woolies.add (new Woolie ("Deirdre", 5, Woolie.city.MERCTRAN)); 
+
+       for (int i = 0; i < 3; i++) {
+           Thread thread = new Thread (woolies.get (i));
+           thread.start ();
+       }
+    }

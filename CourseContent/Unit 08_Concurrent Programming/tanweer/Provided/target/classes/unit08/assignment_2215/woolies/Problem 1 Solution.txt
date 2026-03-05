@@ -1,0 +1,22 @@
+public class Woolie implements Runnable {
+    public enum city {
+        MERCTRAN, SICSTINE
+    }
+
+    public static final int SECOND = 100;
+
+    private String name;
+    private int crossingTime;
+    private city destination;
+
+    public Woolie (String name, int crossingTime, city destination) {
+        this.name = name;
+        this.crossingTime = crossingTime;
+        this.destination = destination;
+    }
+
+    @Override
+    public void run() {
+    }
+
+}
