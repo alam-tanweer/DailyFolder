@@ -1,0 +1,34 @@
+Total
+
+Question 1 -> 30
+
+Question 2 -> 10 + 10
+
+Question 3 -> 10 + 10 + 10 + 20
+
+
+Question 1 - Identify data structure
+
+
+
+
+Question 2
+
+Part A - Identify High Achievers: 
+
+
+
+Part B - Find Adult Student:
+
+
+
+Question 3 - Packages
+
+
+Part 1:
+
+Part 2:
+
+Part 3:
+
+Part 4:
