@@ -1,6 +1,6 @@
 Total
 
-Question 1 -> 30
+Question 1 -> 28
 
 Question 2 -> 10 + 10
 
@@ -8,8 +8,8 @@ Question 3 -> 10 + 10 + 10 + 20
 
 
 Question 1 - Identify data structure
-
-
+Top 10 Most Borrowed Books → Using a List is not the most appropriate choice for this requirement. Maintaining the list in sorted order by borrow count would require re-sorting or shifting elements whenever borrow counts change or new data is added.
+A Max Heap would be a better fit because it is designed to efficiently retrieve the element with the highest value (in this case, the highest borrow count) without needing to repeatedly sort the entire collection.
 
 
 Question 2
