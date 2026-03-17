@@ -1,36 +1,39 @@
-Question 1
+Question 1 - Identify data structure
 
-Part 1: 
-Fuel efficiency is a calculated value and should not be stored as a directly settable field. Providing a setter would allow invalid or arbitrary values. Instead, implement a getFuelEfficiency() method that returns the value computed from the appropriate formula.
+Using a Binary Search Tree (BST) for the Library Organizational Structure is unnecessary, since there is no requirement to maintain the elements in sorted order.
+A simple binary tree would be sufficient for representing the hierarchy in this case.
 
-In the Van and Truck classes, setRating is being called in the constructor while fuel efficiency is also computed in calculateFuelEfficiency(). This duplicates work. The setter should be removed, and fuel efficiency should be derived only through calculateFuelEfficiency().
 
-Part 2:
 
-Part 3:
-The logic to determine the Vehicle with the highest fuel efficiency is missing in VehicleDemo. 
-This value must be calculated programmatically using your array and a loop. It should not be hardcoded.
-
-There is no need to override toString() and equals() in the child classes if the parent class implementation already provides the correct behavior.
-Additionally, your equals() method currently compares only fuel efficiency. It should also verify that the Vehicle names are equal.
-
-Part 4:
-Abstract methods/classes in UML should be indicated using the <<abstract>> notation (or italicized method/class names, depending on UML style).
-
-Also note that VehicleDemo does not extend Vehicle; it uses it. This relationship should be shown as a weak association/dependency link rather than inheritance.
-
-The UML arrow notation is incorrect. An inheritance (extends) relationship must be shown with a closed arrow pointing to the parent class.
-
-The VehicleDemo class is missing from the UML diagram and should be included.
 
 Question 2
 
-Part 1: 
-When your program expects input from the user, you should display 
-a prompt message indicating what the user should enter. Without a prompt, the user has no indication that input is required or what value is expected.
+Part A - Identify High Achievers: 
+
+
+
+Part B - Find Adult Student:
+
+
+
+Question 3 - Packages
+
+
+Part 1:
 
 Part 2:
 
 Part 3:
 
 Part 4:
+The implementation of the Iterator is incorrect. The iterator must maintain a variable to track the current index of the element being returned during iteration.
+
+In your current implementation, the code always calls internalStorage.get(size) and uses a similar condition in hasNext(). This will cause an IndexOutOfBoundsException, because the maximum valid index in a list is size - 1.
+
+Additionally, the iterator should maintain a separate counter (e.g., currentIndex) to track the position of the next element to return.
+
+The hasNext() method should check whether more elements remain by evaluating:
+
+currentIndex < internalStorage.size()
+
+This condition ensures that iteration stops once all elements in the collection have been returned.

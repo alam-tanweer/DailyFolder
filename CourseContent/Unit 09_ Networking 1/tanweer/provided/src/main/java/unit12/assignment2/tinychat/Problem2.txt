@@ -1,0 +1,16 @@
+// The protocol is pretty much just send a message, so the handling
+// is the same for all of them on the client side.
+PrintWriter printer = new PrintWriter (sock.getOutputStream ());
+printer.println (message);
+
+
+Scanner scan = new Scanner (sock.getInputStream ());
+String message = scan.nextLine ();
+
+
+// Alternatively they may have chosen to use the Duplexer, in which case
+Duplexer dup = new Duplexer (socket);
+dup.send (message)
+
+Duplexer dup = new Duplexer (clientSocket);
+String message = dup.read ();

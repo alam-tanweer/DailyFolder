@@ -1,0 +1,80 @@
+Total
+
+Question 1 -> 26
+
+Question 2 -> 0
+
+Question 3 -> 9 + 7.5 + 7.5 + 14 = 38
+
+
+Question 1 - Identify data structure
+
+Library Organizational Structure → A Binary Search Tree (BST) is not the most appropriate choice for this requirement. While a BST organizes elements based on sorted key values, the requirement only describes a hierarchical relationship between branches and sub-branches (e.g., Main Branch → Children’s Section → Early Readers).
+A Binary Tree or general Tree would be more appropriate for representing this type of hierarchy, since sorting is not required.
+
+General Storage (Unordered) → A List can store elements without any required ordering, but the justification is not accurate. Lists do not inherently support searching from “both sides” of the structure. Searching in a list typically requires sequential traversal through the elements.
+The description that searching may require checking both sides of the structure better aligns with a Binary Tree, where a search may need to explore both left and right branches.
+
+
+
+Question 2
+
+Part A - Identify High Achievers: 
+Implementation mising
+
+
+Part B - Find Adult Student:
+Implementation missing
+
+
+
+Question 3 - Packages
+
+
+Part 1:
+Incorrect Implementation
+return (int) this.priority - o.priority;
+it should be
+return this.priority.getRank() - o.priority.getRank()
+
+Part 2:
+Similar issue as Part 3. Please review.
+
+Part 3:
+Part 3 – Comparator Implementation →
+The implementation has several issues. First, the class is intended to define a Comparator, but it does not declare that it implements Comparator<Package>. Because of this, the code will not compile.
+
+Second, the call to Integer.compare() is incorrect. The expression
+Integer.compare(-1*(o1.getWeight(), o2.getWeight())) is syntactically invalid. Integer.compare() requires two arguments, and the attempt to multiply by -1 is not the correct way to implement descending order.
+
+Additionally, the comparison logic should follow the requirement:
+
+Compare by Priority first.
+
+If priorities are equal, compare by Weight in descending order.
+
+A cleaner implementation would reverse the comparison for weight when priorities are equal.
+public class PackageComparatorByWeight implements Comparator<Package> {
+    @Override
+    public int compare(Package o1, Package o2) {
+        int diff = Integer.compare(o1.getPriority(), o2.getPriority());
+        if (diff != 0) {
+            return diff;
+        }
+        return Integer.compare(o2.getWeight(), o1.getWeight()); // descending
+    }
+}
+
+Part 4:
+Part 4 – Iterator Implementation →
+The implementation has several issues.
+
+The class implements Iterable<Package>, but the required method iterator() is missing. The Iterable interface requires an iterator() method that returns an Iterator<Package>. Instead, the class attempts to directly implement hasNext() and next(), which belong to the Iterator interface, not Iterable.
+
+The statement int size = data.length(); is incorrect for an ArrayList. ArrayList uses the method size(), not length().
+
+The line data[index] is also incorrect because ArrayList elements must be accessed using get(index), not array indexing.
+
+The cast (Package) is unnecessary since data is already declared as ArrayList<Package>.
+
+To meet the requirement, the class should implement Iterable<Package> and return a proper Iterator from the iterator() method, which manages the index internally.

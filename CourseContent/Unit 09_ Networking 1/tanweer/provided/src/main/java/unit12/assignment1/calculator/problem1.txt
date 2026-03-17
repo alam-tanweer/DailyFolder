@@ -1,0 +1,21 @@
+What happens when you press 
+5 + 8 =
+13
+
+
+What happens when you then press
+- 4 = 
+11
+
+
+What happens if you then press
+* 8 =
+88
+
+
+In words, describe the process for handling user input given the previous illustrations
+
+1. Thee user to enter three values
+2. Calculate the result
+3. Use the result as the first value in the next binary operation, i.e. the user only enters 2 values
+4. Repeat from step 2.

@@ -1,0 +1,6 @@
+DatagramSocket dsock = new DatagramSocket ();
+String messaage = "I Love Java"
+byte[] outgoing = input.getBytes();
+DatagramPacket packet = new DatagramPacket (outgoing, outgoing.length,
+                        InetAddress.getByName ("se.rit.edu"), 12400);
+dsock.send (packet);

@@ -24,13 +24,15 @@ public class PackageMain {
         System.out.println();
     
         //Part 2 - Packages in priority, length (increasing) order
-        Collections.sort(packages); // <== Update or Modify this line to sort as per requirement.
+        // Collections.sort(packages); // <== Update or Modify this line to sort as per requirement.
+        Collections.sort(packages,new PackageComparator()); 
 
         System.out.println("Priority, Length order: " + packages);
         System.out.println();
 
         //Part 3 - Packages in priority, weight (decreasing) order
-        Collections.sort(packages);   // <== Update or Modify this line to sort as per requirement.
+        // Collections.sort(packages);   // <== Update or Modify this line to sort as per requirement.
+        Collections.sort(packages,new PlanePackageComparator()); 
 
         System.out.println("Priority, Weight order: " + packages);
         System.out.println();

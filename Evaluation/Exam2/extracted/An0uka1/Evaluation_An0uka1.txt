@@ -1,0 +1,31 @@
+Total
+
+Question 1 -> 26
+
+Question 2 -> 20
+
+Question 3 -> 8 + 7 + 10 + 0
+
+
+Question 1 - Identify data structure
+Library Organizational Structure
+A Binary Search Tree (BST) is not the most appropriate data structure for this requirement. A BST is specifically designed to maintain elements in sorted order based on a key, but the problem only describes a hierarchical relationship between branches and sub-branches.
+A Binary Tree or general Tree would be more suitable for representing this type of structure, since it naturally models parent–child relationships without requiring any sorting.
+
+General Storage (Unordered) →
+While a List can store items without any specific ordering, the justification provided is not accurate. Lists do not support searching from “both sides” of the structure. Searching in a list typically requires sequential traversal through all elements until the item is found.
+
+The description that searching may require checking both sides of the structure more closely matches a Binary Tree, where a search may need to explore both the left and right branches.
+
+
+Question 3 - Packages
+
+
+Part 1:
+Incorrect natural ordering implementation. The compareTo method should define sorting only by Priority. Length should not be included in the natural order and should instead be handled in a separate comparator if needed.
+
+Part 2:
+comparator implementation missing.
+
+Part 4:
+implementation missing

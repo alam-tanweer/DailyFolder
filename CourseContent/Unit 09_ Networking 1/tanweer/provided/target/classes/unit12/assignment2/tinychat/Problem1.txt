@@ -1,0 +1,31 @@
+Note: Many teams may come up with a more formal protocol
+with commands in addition to the actual message. This is
+fine but the protocol described below is also what is
+described in the assignment writeup. You may want to go
+over it briefly with them if there is time.
+
+Client-to-Server Messages
+Description                         Message Format
+User 'Jodi' connects                "Jodi"
+to the server
+ 
+User 'Joe' sends broadcast          "Hi!"
+"Hi!" to server
+ 
+User 'Janet' disconnects            "Quit"
+from the server
+
+
+Server-to-Client Messages
+Description                         Message Format
+Server response to Jodi's           "Connected"
+connection request
+ 
+Server sends Joe's message          "Joe: Hi!"
+to any connected client
+ 
+Server responds to Janet's          "Closing"
+disconnection
+ 
+
+ 

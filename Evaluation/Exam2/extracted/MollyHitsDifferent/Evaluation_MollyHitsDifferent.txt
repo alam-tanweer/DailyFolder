@@ -1,0 +1,67 @@
+Total
+
+Question 1 -> 26
+
+Question 2 -> 8 + 7
+
+Question 3 -> 10 + 7 + 7 + 8  = 
+
+
+Question 1 - Identify data structure
+
+Emergency Book Requests → A Dictionary is not the most appropriate data structure for this requirement. While a dictionary can associate a book ID with a priority value, it does not inherently process items in priority order.
+The key requirement here is that the system must always process the highest-priority request first. A Max Heap would be a better choice because it automatically maintains ordering based on priority and allows efficient retrieval of the highest-priority request.
+
+Monthly New Arrivals List → The justification suggests using a node-based structure (linked list), but this requirement specifies that the system must preserve insertion order and allow retrieval by index. Linked lists store elements in nodes connected by references, which means retrieving an element by index requires traversing the list sequentially, making it inefficient.
+A List (array-based list) would be more appropriate because it preserves insertion order and allows direct access by index.
+
+Top 10 Most Borrowed Books → The justification focuses on identifying books by serial number or ensuring title uniqueness using a Set, but the key requirement in the question is the ability to quickly retrieve the book with the highest borrow count.
+A Set or key-value structure does not inherently maintain ordering based on borrow count and would require additional processing to determine the most borrowed book.
+A Max Heap would be a more appropriate data structure because it is specifically designed to efficiently maintain elements based on priority (in this case, borrow count) and allows quick retrieval of the most borrowed book.
+
+
+Question 2
+
+Part A - Identify High Achievers: 
+Lambda expression is not fully correct
+Incorrect ->   Arrays.asList(students).stream().filter(Student x -> x.getGrade() >= 85).forEach(System.out.println(x.getGrade() + " - " + x.getName()));
+Correct -> students.stream().filter(x -> x.getGrade() >= 85).forEach(x -> System.out.println(x.getGrade() + " - " + x.getName()));
+
+
+Part B - Find Adult Student:
+Incorrect Lamda expression. filter condition missing
+Arrays.asList(students).stream().forEach(System.out.println(x.getName() + " - " + x.getAge()));
+
+
+Question 3 – Packages
+
+Part 2:
+The compareTo method should return -1, 0, or 1 to indicate ordering:
+
+-1 if object a comes before b
+
+0 if a and b are equal
+
+1 if a comes after b
+
+Returning values such as 3, 2, or 1 is not correct for this implementation.
+
+Additionally, the implementation for Part 2 is not correct. The Package class already defines the natural ordering using compareTo. For this part, an additional sorting rule (Priority → Length) is required. This should be implemented using a separate Comparator class, which is then passed to the Collections.sort() method.
+
+The comparison logic also needs to be updated to correctly follow the requirement:
+
+Sort by Priority
+
+If priorities are equal, sort by Length (ascending).
+
+Part 3:
+The same issue applies as in Part 2. Since the natural order is already defined in the Package class, this part should also use a separate Comparator. The comparator should sort packages by:
+
+Priority
+
+Weight (descending) when priorities are equal.
+
+The current comparison logic does not fully implement this requirement.
+
+Part 4:
+The Iterator implementation is missing. The PackageCollection class must implement Iterable<Package> and provide an iterator() method that returns a custom Iterator. The iterator should track the current position and allow the collection to be traversed using a for-each loop.

@@ -1,0 +1,67 @@
+Total
+
+Question 1 -> 26
+
+Question 2 -> 7 + 7
+
+Question 3 -> 7 + 7 + 7 + 4
+
+
+Question 1 - Identify data structure
+
+Library Organizational Structure → A Binary Search Tree (BST) is not the most appropriate choice for this requirement. While a BST organizes elements based on sorted key values, the requirement only describes a hierarchical relationship between branches and sub-branches (e.g., Main Branch → Children’s Section → Early Readers).
+A Binary Tree or general Tree would be more appropriate for representing this type of hierarchy, since sorting is not required.
+
+Archived Rare Books (Search by ID) →
+A Set ensures uniqueness of elements, but it is not the most appropriate data structure for this requirement. The key requirement is efficient searching by Archive ID. While some set implementations maintain ordering, sets are primarily designed to enforce uniqueness, not to efficiently organize and search elements based on a specific key.
+
+A Binary Search Tree (BST) would be a better choice because it organizes elements by key (in this case, Archive ID) and supports efficient searching by ID.
+
+
+Question 2
+
+Part A - Identify High Achievers: 
+The implementation does not correctly apply the filtering requirement. The filter() operation is created on one stream, but its result is not used. Then a new stream is created for forEach(), which prints all students, not just those with grades above 85.
+
+In the Stream API, operations like filter() must be part of the same stream pipeline as the terminal operation (forEach()). The filtered stream should be directly passed to forEach() to ensure that only students with grades above 85 are printed.
+
+
+Part B - Find Adult Student:
+Similar issue as Part B
+
+
+Question 3 - Packages
+
+
+Part 1:
+Part 1 – Natural Ordering Implementation →
+The implementation is incorrect for defining the natural ordering of Package objects.
+
+The code creates an anonymous Comparable<Priority> object, which does not apply to sorting Package instances. The natural ordering should be implemented in the Package class by implementing Comparable<Package>.
+
+The compareTo method should compare two Package objects based on their Priority, not compare Priority objects in this way.
+
+The expression this.getRank() is also incorrect in this context because the anonymous Comparable object does not represent a Priority instance.
+
+To meet the requirement, the Package class should implement Comparable<Package> and define compareTo() so that packages are sorted only by Priority.
+
+Part 2:
+Part 2 – Comparator Implementation →
+The comparator implementation is incorrect for several reasons.
+
+The comparator is declared as Comparator<Priority>, but the sorting requirement is for Package objects, not Priority. It should be implemented as Comparator<Package>.
+
+The code unnecessarily creates new Package objects inside the compare() method. Comparators should compare the objects passed as parameters, not create new ones.
+
+The comparison logic is incorrect. Both pol and ptl are created using o2, so the comparison will always return 0, meaning no effective sorting occurs.
+
+The requirement states that packages should be sorted first by Priority and then by Length (ascending), but the current implementation only attempts to compare length and does not correctly incorporate priority.
+
+To meet the requirement, the comparator should compare the priority first, and if priorities are equal, then compare the length in ascending order.
+
+
+Part 3:
+Simiar issue as in Part 2
+
+Part 4:
+Iteration Implementation missing

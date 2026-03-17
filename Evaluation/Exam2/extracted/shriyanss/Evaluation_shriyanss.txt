@@ -1,0 +1,53 @@
+Total
+
+Question 1 -> 19 + 2x3 = 25
+
+Question 2 -> 10 + 10 == 17
+
+Question 3 -> 10 + 7 + 7 + 8 - 32
+
+
+Question 1 - Identify data structure
+Emergency Book Requests → The requirement specifies processing requests based on priority (Urgent, High, Medium, Low). A Max Heap would be a more appropriate choice because it efficiently retrieves the highest-priority item first.
+Using a Queue would not be suitable since queues process items strictly in FIFO order and would not automatically prioritize higher-priority requests.
+
+Archived Rare Books (Search by ID) → A Min/Max Heap is not an appropriate choice here. The main requirement is efficient searching by unique Archive ID, whereas heaps are designed primarily for quickly retrieving the minimum or maximum element, not for fast lookup of an arbitrary ID.
+A Binary Search Tree (BST) would be a much better choice because it organizes elements by key and supports more efficient searching by ID.
+
+Top 10 Most Borrowed Books → An array-based list is not the best choice for this requirement. The system must frequently determine the book with the highest borrow count, and an array-based list would require scanning the entire list to find the maximum each time.
+A Max Heap would be a more appropriate data structure because it allows efficient retrieval of the item with the highest borrow count.
+
+
+Question 2
+
+Part A - Identify High Achievers: 
+Same issue as part B
+
+Part B - Find Adult Student:
+
+Your implementation was close. There was syntax error
+
+Incorrect --> Arrays.stream(students).filter(s -> s.getAge() > 18).forEach(s -> System.out.println(s.getName() + " - " + s.getAge()));
+Correct -->   students.stream().filter(s -> s.getAge() > 18).forEach(s -> System.out.println(s.getName() + " - " + s.getAge()));
+
+Condition s.getAge() > 18 is incorrect. It should be s.getAge() >= 18
+
+
+Question 3 - Packages
+
+
+Part 2:
+You have used incorrect comparator. It should be length comparator.
+
+Output is not CorrectPriority, Length order: [[Priority=HIGH, length=10, weight=7], [Priority=LOW, length=12, weight=10], [Priority=MEDIUM, length=18, weight=12], [Priority=LOW, length=22, weight=15], [Priority=HIGH, length=13, weight=17], [Priority=MEDIUM, length=25, weight=18], [Priority=LOW, length=14, weight=25]]
+ority=LOW, length=14, weight=25]]
+ority=LOW, length=14, weight=25]]
+ority=LOW, length=14, weight=25]]
+Here, item should be sorted first by priority and then length
+
+Part 3:
+You have used incorrect comparator. It should be weight comparator.
+Same issue as Part 2
+
+Part 4:
+Incomplete Iterator() implementation. It goes in infinite loop.

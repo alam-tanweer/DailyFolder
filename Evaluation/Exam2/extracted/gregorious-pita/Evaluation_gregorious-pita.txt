@@ -1,0 +1,12 @@
+Total
+
+Question 1 -> 28
+
+Question 2 -> 10 + 10
+
+Question 3 -> 10 + 10 + 10 + 20
+
+
+Question 1 - Identify data structure
+1. A binary Search Tree for Library Organizational Structure is an overkill as we don't need to sort it.
+a Binary tree could do that jo.

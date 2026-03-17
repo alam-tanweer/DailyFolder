@@ -4,7 +4,7 @@ Question 1 -> 28
 
 Question 2 -> 10 + 10
 
-Question 3 -> 10 + 10 + 10 + 20
+Question 3 -> 10 + 9.5 + 9,5 + 5
 
 
 Question 1 - Identify data structure
@@ -12,23 +12,13 @@ Top 10 Most Borrowed Books → Using a List is not the most appropriate choice f
 A Max Heap would be a better fit because it is designed to efficiently retrieve the element with the highest value (in this case, the highest borrow count) without needing to repeatedly sort the entire collection.
 
 
-Question 2
-
-Part A - Identify High Achievers: 
-
-
-
-Part B - Find Adult Student:
-
-
-
 Question 3 - Packages
 
-
-Part 1:
-
 Part 2:
+PackageMain class is not updated to use correct comparator.
 
 Part 3:
+PackageMain class is not updated to use correct comparator.
 
 Part 4:
+Iterator Implementation missing in PackageCollection Class.

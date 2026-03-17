@@ -1,0 +1,23 @@
+Total
+
+Question 1 -> 30
+
+Question 2 -> 20
+
+Question 3 -> 10 + 10 + 10 + 14
+
+
+Question 3 - Packages
+
+Part 4:
+The implementation of the Iterator is incorrect. The iterator must maintain a variable to track the current index of the element being returned during iteration.
+
+In your current implementation, the code always calls internalStorage.get(size) and uses a similar condition in hasNext(). This will cause an IndexOutOfBoundsException, because the maximum valid index in a list is size - 1.
+
+Additionally, the iterator should maintain a separate counter (e.g., currentIndex) to track the position of the next element to return.
+
+The hasNext() method should check whether more elements remain by evaluating:
+
+currentIndex < internalStorage.size()
+
+This condition ensures that iteration stops once all elements in the collection have been returned.

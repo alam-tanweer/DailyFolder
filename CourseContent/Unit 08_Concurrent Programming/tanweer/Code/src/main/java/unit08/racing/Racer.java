@@ -26,10 +26,10 @@ public class Racer {
     public void race() {
         long start = System.nanoTime();
         for (int i = 0; i < num_laps; i++) {
-            // /** Activity 8.17 **/
-            // try {
-            //     Thread.sleep(rand.nextInt(20, 100));
-            // } catch (InterruptedException e) {}
+            /** Activity 8.17 **/
+            try {
+                Thread.sleep(rand.nextInt(20, 100));
+            } catch (InterruptedException e) {}
             lap++;
 
             if (debug) {

@@ -1,0 +1,35 @@
+Total
+
+Question 1 -> 30 = 24
+
+Question 2 -> 10 + 10 = 20
+
+Question 3 -> 10 + 10 + 10 + 15
+
+
+Question 1 - Identify data structure
+
+Library Organizational Structure → A NodeQueue is not an appropriate choice for representing this structure. Queues are designed for FIFO processing, not for representing hierarchical relationships.
+The requirement describes a hierarchical structure (Main Branch → Children’s Section → Early Readers), which is best represented using a Tree (Binary Tree or general Tree) where each node can have child nodes representing sub-branches.
+
+General Storage (Unordered) → A List is not the best justification for this requirement. While a list can store unordered items, the justification is incorrect in stating that a list has a fixed size and supports searching on both sides. Lists are typically dynamic and searching requires sequential traversal from the beginning.
+The requirement specifically mentions that searching may require checking both sides of the structure, which more closely aligns with a Binary Tree, where searches may proceed through both left and right subtrees.
+
+Top 10 Most Borrowed Books → A Binary Search Tree (BST) is not the best choice for this requirement. While a BST organizes elements based on key values (such as borrow count), retrieving the maximum element still requires traversing to the far-right node, and maintaining the top 10 most borrowed books would require additional logic.
+A Max Heap would be a better choice because it is specifically designed to efficiently maintain and retrieve the highest-priority element (in this case, the highest borrow count).
+
+
+
+
+
+Part 4:
+Part 4 – Iterator Implementation →
+The implementation is not correct. The iterator() method must return an instance of an Iterator<Package>, typically implemented using an anonymous inner class (new Iterator<Package>() { ... }). In the current code, the return statement is missing the new Iterator<Package>() declaration, so the code will not compile.
+
+Additionally, the hasNext() condition should use:
+
+i < internalStorage.size()
+
+instead of i != internalStorage.size() to clearly indicate that iteration should continue while the index is within bounds.
+
+The next() method also increments the index before retrieving the element, which works but is less clear. A cleaner implementation would retrieve the element first and then increment the index.

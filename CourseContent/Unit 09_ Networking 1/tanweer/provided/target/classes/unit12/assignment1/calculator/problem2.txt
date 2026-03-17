@@ -1,0 +1,17 @@
+ Client:
+ 2  Scanner in = new Scanner (System.in);
+ 3  System.out.print ("Enter math operation: ");
+ 4  String input = in.nextLine ();
+ 5 
+ 6  while (!input.equals(" ")) {
+13      System.out.print (result);
+14  }
+
+Server:
+ 1  Calculator calculator = new Calculator (OPS);
+ 7      String[] tokens = input.strip().split(" ");
+ 8      String result;
+ 9      float operand1 = Float.parseFloat(tokens[0]);
+10      float operand2 = Float.parseFloat(tokens[2]);
+11      result = calculator.calculate(tokens[1], 
+12               operand1, operand2) + "";
