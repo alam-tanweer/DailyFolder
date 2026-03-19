@@ -8,8 +8,10 @@ import java.net.Socket;
 public class Name {
     public static void main(String[] args) throws IOException {
         Socket client = new Socket ("localhost", 12345);
+
         OutputStream output = client.getOutputStream ();
         PrintWriter printer = new PrintWriter (output);
+
         printer.println ("Tanweer Alam"); 
         printer.flush ();
         client.close ();

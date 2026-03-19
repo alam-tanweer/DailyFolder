@@ -3,6 +3,8 @@ Question 1 - Identify data structure
 Using a Binary Search Tree (BST) for the Library Organizational Structure is unnecessary, since there is no requirement to maintain the elements in sorted order.
 A simple binary tree would be sufficient for representing the hierarchy in this case.
 
+Emergency Book Requests → The requirement specifies processing requests based on priority (Urgent, High, Medium, Low). A Max Heap would be a more appropriate choice because it efficiently retrieves the highest-priority item first.
+Using a Queue would not be suitable since queues process items strictly in FIFO order and would not automatically prioritize higher-priority requests.
 
 
 
