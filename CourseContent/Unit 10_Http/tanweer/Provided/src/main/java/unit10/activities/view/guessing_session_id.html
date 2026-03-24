@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guessing Game</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 640px; margin: 2rem auto; }
+    .controls { display:flex; gap:8px; align-items:center; }
+    #history { margin-top:1rem; white-space:pre-wrap; background:#f8f8f8; padding:8px; border-radius:4px }
+  </style>
+</head>
+<body>
+  <h1>Guessing Game</h1>
+  <p>This page communicates with the GuessingGame server using the plain-text protocol:
+    <code>GUESS &lt;number&gt;</code>, <code>RESTART</code>, and <code>QUIT</code> in the request body.</p>
+
+  <div class="controls">
+    <label for="guess">Your guess:</label>
+    <input id="guess" type="number" min="0" step="1">
+    <button id="btnGuess">Guess</button>
+    <button id="btnRestart">Restart</button>
+    <button id="btnQuit">Quit</button>
+  </div>
+
+  <div id="status" aria-live="polite" style="margin-top:12px"></div>
+  <div id="history"></div>
+
+  <script>
+    const baseUrl = 'http://localhost:8081/'; // server from GuessingGameServer.main
+    const guessInput = document.getElementById('guess');
+    const status = document.getElementById('status');
+    const historyEl = document.getElementById('history');
+
+    // Generate a unique session ID
+    const sessionId = 'session-' + Math.random().toString(36).substr(2, 9) + '-' + Date.now();
+
+    function appendHistory(line) {
+      historyEl.textContent = (historyEl.textContent ? historyEl.textContent + '\n' : '') + line;
+    }
+
+    async function sendCommand(cmd) {
+      try {
+        appendHistory('SEND: ' + cmd);
+        const res = await fetch(baseUrl, { 
+          method: 'POST', 
+          body: cmd,
+          headers: {
+            'x-session-id': sessionId
+          }
+        });
+        const text = await res.text();
+        appendHistory('RECV: ' + text);
+        handleResponse(text);
+      } catch (err) {
+        status.textContent = 'Error: ' + err.message;
+      }
+    }
+
+    function handleResponse(text) {
+      switch (text.trim()) {
+        case 'CORRECT':
+          status.textContent = 'Correct! You win.';
+          guessInput.disabled = true;
+          break;
+        case 'TOO_LOW':
+          status.textContent = 'Too low.';
+          break;
+        case 'TOO_HIGH':
+          status.textContent = 'Too high.';
+          break;
+        case 'OUT_OF_GUESSES':
+          status.textContent = 'Out of guesses. Game over.';
+          guessInput.disabled = true;
+          break;
+        case 'GAME_OVER':
+          status.textContent = 'Game over (server ended the game).';
+          guessInput.disabled = true;
+          break;
+        case 'RESTARTED':
+          status.textContent = 'Game restarted.';
+          guessInput.disabled = false;
+          historyEl.textContent = '';
+          break;
+        default:
+          status.textContent = text;
+      }
+    }
+
+    document.getElementById('btnGuess').addEventListener('click', () => {
+      const n = guessInput.value;
+      if (n === '') return; 
+      sendCommand('GUESS ' + n);
+    });
+
+    document.getElementById('btnRestart').addEventListener('click', () => {
+      sendCommand('RESTART');
+    });
+
+    document.getElementById('btnQuit').addEventListener('click', () => {
+      sendCommand('QUIT');
+    });
+
+    // allow Enter to submit a guess
+    guessInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        document.getElementById('btnGuess').click();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+new Runnable {
+    @Override
+    public void run () { // You cannot throw IOError from run
+        try {
+            Scanner in = new Scanner (sock.getInputStream ());
+            String message = null;
+            while (true) {
+                message = in.getLine ();
+                // Closing check is not required for PSS
+                if (message.equals ("Closing")) {
+                    break;
+                }
+                System.out.println (message);
+            }
+            in.close ();
+        } catch (IOException ioe) {}
+    }
+}

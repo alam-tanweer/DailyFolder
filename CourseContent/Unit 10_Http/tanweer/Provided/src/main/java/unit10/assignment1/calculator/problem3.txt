@@ -1,0 +1,4 @@
+DatagramSocket dsock = new DatagramSocket (12400);
+byte[] data = new byte [1024];
+DatagramPacket operation = new DatagramPacket (data, data.length);
+dsock.receive(operation);
