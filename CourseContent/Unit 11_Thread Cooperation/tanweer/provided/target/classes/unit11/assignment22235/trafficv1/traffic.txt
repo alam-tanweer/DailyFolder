@@ -1,0 +1,28 @@
+The North/South light is RED
+The East/West light is RED
+  Vehicle (1) headed North stops because the light is RED.
+The North/South light changes from RED to GREEN
+  Vehicle (1) headed North drives through the intersection.
+  Vehicle (2) headed South drives through the intersection.
+  Vehicle (3) headed North drives through the intersection.
+  Vehicle (4) headed East stops because the light is RED.
+  Vehicle (5) headed East stops because the light is RED.
+The North/South light changes from GREEN to YELLOW
+  Vehicle (6) headed North stops because the light is YELLOW.
+  Vehicle (7) headed North stops because the light is YELLOW.
+  Vehicle (8) headed East stops because the light is RED.
+The North/South light changes from YELLOW to RED
+The East/West light changes from RED to GREEN
+  Vehicle (4) headed East drives through the intersection.
+  Vehicle (8) headed East drives through the intersection.
+  Vehicle (5) headed East drives through the intersection.
+  Vehicle (9) headed West drives through the intersection.
+  Vehicle (10) headed South stops because the light is RED.
+The East/West light changes from GREEN to YELLOW
+The East/West light changes from YELLOW to RED
+The North/South light changes from RED to GREEN
+  Vehicle (6) headed North drives through the intersection.
+  Vehicle (10) headed South drives through the intersection.
+  Vehicle (7) headed North drives through the intersection.
+The North/South light changes from GREEN to YELLOW
+The North/South light changes from YELLOW to RED

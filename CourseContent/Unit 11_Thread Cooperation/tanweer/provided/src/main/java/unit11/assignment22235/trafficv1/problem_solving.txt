@@ -1,0 +1,75 @@
+//
+// Problem 1
+//
+
+public enum Color {
+    RED,
+    YELLOW,
+    GREEN
+}
+
+public enum Direction {
+    NORTH,
+    SOUTH,
+    EAST,
+    WEST
+}
+
+//
+// Problem 2
+//
+
+@Override
+public void run() {
+    synchronized(lock) {
+        while(true) {
+            try {
+                Thread.sleep(1000);
+                color = Color.GREEN;
+                Thread.sleep(5000);
+                color = Color.YELLOW;
+                Thread.sleep(2000);
+                color = Color.RED;
+                lock.notify();
+                lock.wait();
+            } catch (InterruptedException e) {
+                // squash
+            }
+        }
+    }
+}
+
+//
+// Problem 3
+//
+
+public class Vehicle implements Runnable {
+    private final int id;
+    private final Direction direction;
+    private final Intersection intersection;
+
+    public Vehicle(int id, Direction direction, Intersection intersection) {
+        this.id = id;
+        this.direction = direction;
+        this.intersection = intersection;
+    }
+
+    @Override
+    public void run() {
+        intersection.driveThrough(this);        
+    }   
+}
+
+//
+// Problem 4
+//
+
+get direction from vehicle
+get traffic light corresponding to direction
+synchronize on light
+    if light is green
+    vehicle drives through
+    otherwise
+    while light is not green
+        wait
+    drive through intersection

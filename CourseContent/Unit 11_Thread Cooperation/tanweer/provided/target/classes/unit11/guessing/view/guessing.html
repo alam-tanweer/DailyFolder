@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guessing Game — Play</title>
+  <style>
+    :root{--bg:#f3f6fb;--card:#ffffff;--accent:#2563eb;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#eef2ff 0%,var(--bg) 100%);margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
+    .card{width:100%;max-width:760px;background:var(--card);border-radius:12px;box-shadow:0 8px 30px rgba(16,24,40,0.08);padding:24px}
+    h1{margin:0 0 8px;font-size:1.6rem}
+    .meta{color:var(--muted);margin-bottom:16px}
+    .controls{display:flex;gap:12px;align-items:center}
+    input[type=number]{flex:1;padding:10px 12px;border:1px solid #e6e9ef;border-radius:8px;font-size:1rem}
+    button{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;border:0;cursor:pointer;font-weight:600}
+    button.secondary{background:#e2e8f0;color:#111;font-weight:600}
+    .status{margin-top:14px;display:flex;gap:12px;align-items:center}
+    .badge{padding:6px 10px;border-radius:999px;font-weight:600}
+    .badge.ok{background:#dcfce7;color:#166534}
+    .badge.warn{background:#fff7ed;color:#7c2d12}
+    .history{margin-top:16px;background:#fbfdff;border:1px solid #eef2ff;padding:12px;border-radius:8px;max-height:220px;overflow:auto;font-family:monospace;font-size:0.95rem}
+    .row{display:flex;gap:8px;align-items:center}
+    .muted{color:var(--muted)}
+    footer{margin-top:12px;color:var(--muted);font-size:0.9rem}
+    @media (max-width:520px){.controls{flex-direction:column;align-items:stretch}button{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Guessing Game</h1>
+    <div class="meta">Send plain-text commands in the request body: <code>GUESS &lt;number&gt;</code>, <code>RESTART</code>, <code>QUIT</code>.</div>
+
+    <div class="controls">
+      <input id="guess" type="number" placeholder="Enter a number" min="0">
+      <button id="btnGuess">Guess</button>
+      <button id="btnRestart" class="secondary">Restart</button>
+      <button id="btnQuit" class="secondary">Quit</button>
+    </div>
+
+    <div class="status">
+      <div id="resultBadge" class="badge muted">Not started</div>
+      <div id="resultText" class="muted">Awaiting a guess...</div>
+    </div>
+
+    <div id="history" class="history" aria-live="polite"></div>
+
+    <footer>Server: <span id="serverAddr">http://localhost:8081/</span> | x-session-id: <span id="clientId"></span></footer>
+  </div>
+
+  <script>
+    const baseUrl = 'http://localhost:8081/';
+    const guessInput = document.getElementById('guess');
+    const btnGuess = document.getElementById('btnGuess');
+    const btnRestart = document.getElementById('btnRestart');
+    const btnQuit = document.getElementById('btnQuit');
+    const historyEl = document.getElementById('history');
+    const resultBadge = document.getElementById('resultBadge');
+    const resultText = document.getElementById('resultText');
+    const clientIdEl = document.getElementById('clientId');
+
+    // Generate a unique Client-ID for this instance
+    const clientId = 'client-' + Math.random().toString(36).substr(2, 9) + '-' + Date.now();
+    clientIdEl.textContent = clientId;
+
+    function timestamp() { return new Date().toLocaleTimeString(); }
+    function addHistory(direction, msg) {
+      const el = document.createElement('div');
+      el.textContent = `[${timestamp()}] ${direction}: ${msg}`;
+      historyEl.prepend(el);
+    }
+
+    async function sendCommand(cmd) {
+      try {
+        addHistory('SEND', cmd);
+        const res = await fetch(baseUrl, { 
+          method: 'POST', 
+          body: cmd,
+          headers: {
+            'x-session-id': clientId
+          }
+        });
+        const text = await res.text();
+        addHistory('RECV', text);
+        applyResponse(text.trim());
+      } catch (err) {
+        applyResponse('ERROR: ' + err.message);
+      }
+    }
+
+    function applyResponse(text) {
+      switch(text) {
+        case 'CORRECT':
+          resultBadge.textContent = 'Correct';
+          resultBadge.className = 'badge ok';
+          resultText.textContent = 'You guessed the number!';
+          guessInput.disabled = true;
+          break;
+        case 'TOO_LOW':
+          resultBadge.textContent = 'Too low';
+          resultBadge.className = 'badge warn';
+          resultText.textContent = 'Try a higher number.';
+          break;
+        case 'TOO_HIGH':
+          resultBadge.textContent = 'Too high';
+          resultBadge.className = 'badge warn';
+          resultText.textContent = 'Try a lower number.';
+          break;
+        case 'OUT_OF_GUESSES':
+          resultBadge.textContent = 'Out of guesses';
+          resultBadge.className = 'badge warn';
+          resultText.textContent = 'No more guesses — restart to play again.';
+          guessInput.disabled = true;
+          break;
+        case 'GAME_OVER':
+          resultBadge.textContent = 'Game over';
+          resultBadge.className = 'badge warn';
+          resultText.textContent = 'Server ended the game.';
+          guessInput.disabled = true;
+          break;
+        case 'RESTARTED':
+          resultBadge.textContent = 'Restarted';
+          resultBadge.className = 'badge ok';
+          resultText.textContent = 'Game restarted.';
+          guessInput.disabled = false;
+          historyEl.textContent = '';
+          break;
+        default:
+          resultBadge.textContent = 'Server';
+          resultBadge.className = 'badge';
+          resultText.textContent = text;
+      }
+    }
+
+    btnGuess.addEventListener('click', () => {
+      const n = guessInput.value;
+      if (n === '') return;
+      sendCommand('GUESS ' + n);
+    });
+    btnRestart.addEventListener('click', () => sendCommand('RESTART'));
+    btnQuit.addEventListener('click', () => sendCommand('QUIT'));
+
+    guessInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') btnGuess.click(); });
+  </script>
+</body>
+</html>

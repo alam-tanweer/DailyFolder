@@ -1,0 +1,99 @@
+//
+// Problem 1
+//
+public class Food {
+    private final String name;
+    private final int servings;
+
+    public Food(String name, int servings) {
+        this.name = name;
+        this.servings = servings;
+    }
+    
+    public String getName() {
+        return name;
+    }
+
+    public int getServings() {
+        return servings;
+    }
+
+    @Override
+    public String toString() {
+        return servings + " servings of " + name;
+    }
+}
+
+//
+// Problem 2
+//
+
+public class ChezWoolie {
+    private List<Food> conveyor;
+    private int dinerCount;
+
+    public ChezWoolie() {
+        conveyor = new LinkedList<>();
+        dinerCount = 0;
+    }
+
+    public synchronized void enter() {
+        dinerCount++;
+        notify();
+    }
+
+    public synchronized void exit() {
+        dinerCount--;
+    }
+
+    public synchronized int getDinerCount() {
+        return dinerCount;
+    }
+}
+
+//
+// Problem 3 (added to ChezWoolie class above)
+//
+
+    public Food retrieveFood() {
+        synchronized(conveyor) {
+            while(conveyor.isEmpty()) {
+                try {
+                    conveyor.wait();
+                } catch (InterruptedException e) {
+                    // squash
+                }
+            }
+            return conveyor.remove(0);
+        }
+    }
+
+    public void serveFood(Food food) {
+        synchronized(conveyor) {
+            conveyor.add(food);
+            conveyor.notifyAll();
+        }
+    }
+
+//
+// Problem 4 (in a Diner class)
+//
+public void eat(Food food) {
+    try {
+        Thread.sleep(food.getServings() * 1000);
+    } catch (InterruptedException e) {
+        // squash
+    }
+    hunger -= food.getServings();
+}
+
+@Override
+public void run() {
+    chezWoolie.enter();
+    while(hunger > 0) {
+        Food food = chezWoolie.retrieveFood();
+        eat(food);
+    }
+    chezWoolie.exit();
+}
+

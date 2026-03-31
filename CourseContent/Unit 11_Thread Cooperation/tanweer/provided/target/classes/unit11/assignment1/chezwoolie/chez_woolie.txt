@@ -1,0 +1,215 @@
+Chez Woolie is opening for the day!
+Chef #1 is early! Waiting for customers.
+Chef #2 is early! Waiting for customers.
+Diner #1 enters the restaurant!
+Diner #3 enters the restaurant!
+Diner #2 enters the restaurant!
+Diner #6 enters the restaurant!
+Diner #6 wants 10 servings of food!
+Chef #2 begins to prepare 2 servings of French Fries
+Diner #3 wants 8 servings of food!
+Diner #5 enters the restaurant!
+Diner #5 wants 10 servings of food!
+Diner #1 wants 6 servings of food!
+Diner #4 enters the restaurant!
+Chef #1 begins to prepare 2 servings of Pepperoni Pizza
+Diner #4 wants 9 servings of food!
+Diner #10 enters the restaurant!
+Diner #10 wants 9 servings of food!
+Diner #9 enters the restaurant!
+Diner #8 enters the restaurant!
+Diner #7 enters the restaurant!
+Diner #2 wants 9 servings of food!
+Diner #7 wants 10 servings of food!
+Diner #8 wants 7 servings of food!
+Diner #9 wants 9 servings of food!
+Chef #2 finishes 2 servings of French Fries and places it on the conveyor belt.
+Chef #2 begins to prepare 3 servings of Turkey Leg
+Diner #6 begins to eat 2 servings of French Fries
+Chef #1 finishes 2 servings of Pepperoni Pizza and places it on the conveyor belt.
+Chef #1 begins to prepare 2 servings of Strawberry Shortcake
+Diner #9 begins to eat 2 servings of Pepperoni Pizza
+Diner #6 finishes eating 2 servings of French Fries and is still hungry!
+Diner #6 wants 8 servings of food!
+Diner #9 finishes eating 2 servings of Pepperoni Pizza and is still hungry!
+Chef #1 finishes 2 servings of Strawberry Shortcake and places it on the conveyor belt.
+Chef #2 finishes 3 servings of Turkey Leg and places it on the conveyor belt.
+Diner #3 begins to eat 2 servings of Strawberry Shortcake
+Chef #1 begins to prepare 5 servings of Banana Split
+Diner #9 wants 7 servings of food!
+Diner #6 begins to eat 3 servings of Turkey Leg
+Chef #2 begins to prepare 5 servings of Banana Split
+Diner #3 finishes eating 2 servings of Strawberry Shortcake and is still hungry!
+Diner #3 wants 6 servings of food!
+Diner #6 finishes eating 3 servings of Turkey Leg and is still hungry!
+Diner #6 wants 5 servings of food!
+Chef #1 finishes 5 servings of Banana Split and places it on the conveyor belt.
+Chef #1 begins to prepare 4 servings of Hamburger
+Diner #5 begins to eat 5 servings of Banana Split
+Chef #2 finishes 5 servings of Banana Split and places it on the conveyor belt.
+Chef #2 begins to prepare 1 servings of Rice Pudding
+Diner #6 begins to eat 5 servings of Banana Split
+Chef #2 finishes 1 servings of Rice Pudding and places it on the conveyor belt.
+Chef #2 begins to prepare 3 servings of Shrimp Tempura
+Diner #1 begins to eat 1 servings of Rice Pudding
+Chef #1 finishes 4 servings of Hamburger and places it on the conveyor belt.
+Diner #1 finishes eating 1 servings of Rice Pudding and is still hungry!
+Diner #3 begins to eat 4 servings of Hamburger
+Chef #1 begins to prepare 5 servings of Banana Split
+Diner #1 wants 5 servings of food!
+Diner #5 finishes eating 5 servings of Banana Split and is still hungry!
+Diner #5 wants 5 servings of food!
+Chef #2 finishes 3 servings of Shrimp Tempura and places it on the conveyor belt.
+Chef #2 begins to prepare 2 servings of Cajun Fries
+Diner #6 finishes eating 5 servings of Banana Split and is full!
+Diner #6 exits the restaurant!
+Diner #4 begins to eat 3 servings of Shrimp Tempura
+Diner #3 finishes eating 4 servings of Hamburger and is still hungry!
+Chef #2 finishes 2 servings of Cajun Fries and places it on the conveyor belt.
+Diner #5 begins to eat 2 servings of Cajun Fries
+Diner #3 wants 2 servings of food!
+Chef #2 begins to prepare 2 servings of Cajun Fries
+Chef #1 finishes 5 servings of Banana Split and places it on the conveyor belt.
+Chef #1 begins to prepare 2 servings of Cajun Fries
+Diner #4 finishes eating 3 servings of Shrimp Tempura and is still hungry!
+Diner #10 begins to eat 5 servings of Banana Split
+Diner #4 wants 6 servings of food!
+Chef #2 finishes 2 servings of Cajun Fries and places it on the conveyor belt.
+Chef #2 begins to prepare 2 servings of Cajun Fries
+Diner #5 finishes eating 2 servings of Cajun Fries and is still hungry!
+Diner #3 begins to eat 2 servings of Cajun Fries
+Diner #5 wants 3 servings of food!
+Chef #1 finishes 2 servings of Cajun Fries and places it on the conveyor belt.
+Chef #1 begins to prepare 1 servings of Dumplings
+Diner #4 begins to eat 2 servings of Cajun Fries
+Chef #1 finishes 1 servings of Dumplings and places it on the conveyor belt.
+Chef #2 finishes 2 servings of Cajun Fries and places it on the conveyor belt.
+Chef #2 begins to prepare 4 servings of Hamburger
+Diner #3 finishes eating 2 servings of Cajun Fries and is full!
+Diner #2 begins to eat 2 servings of Cajun Fries
+Diner #5 begins to eat 1 servings of Dumplings
+Chef #1 begins to prepare 1 servings of Dumplings
+Diner #3 exits the restaurant!
+Diner #10 finishes eating 5 servings of Banana Split and is still hungry!
+Diner #4 finishes eating 2 servings of Cajun Fries and is still hungry!
+Diner #10 wants 4 servings of food!
+Diner #4 wants 4 servings of food!
+Diner #5 finishes eating 1 servings of Dumplings and is still hungry!
+Chef #1 finishes 1 servings of Dumplings and places it on the conveyor belt.
+Diner #5 wants 2 servings of food!
+Diner #1 begins to eat 1 servings of Dumplings
+Chef #1 begins to prepare 4 servings of Hamburger
+Diner #2 finishes eating 2 servings of Cajun Fries and is still hungry!
+Diner #2 wants 7 servings of food!
+Diner #1 finishes eating 1 servings of Dumplings and is still hungry!
+Diner #1 wants 4 servings of food!
+Chef #2 finishes 4 servings of Hamburger and places it on the conveyor belt.
+Chef #2 begins to prepare 4 servings of Hamburger
+Diner #4 begins to eat 4 servings of Hamburger
+Chef #1 finishes 4 servings of Hamburger and places it on the conveyor belt.
+Chef #1 begins to prepare 2 servings of Cajun Fries
+Diner #1 begins to eat 4 servings of Hamburger
+Chef #1 finishes 2 servings of Cajun Fries and places it on the conveyor belt.
+Diner #4 finishes eating 4 servings of Hamburger and is full!
+Chef #2 finishes 4 servings of Hamburger and places it on the conveyor belt.
+Diner #4 exits the restaurant!
+Diner #10 begins to eat 2 servings of Cajun Fries
+Chef #1 begins to prepare 1 servings of Dumplings
+Diner #2 begins to eat 4 servings of Hamburger
+Chef #2 begins to prepare 5 servings of Banana Split
+Diner #1 finishes eating 4 servings of Hamburger and is full!
+Diner #1 exits the restaurant!
+Chef #1 finishes 1 servings of Dumplings and places it on the conveyor belt.
+Chef #1 begins to prepare 2 servings of French Fries
+Diner #7 begins to eat 1 servings of Dumplings
+Diner #10 finishes eating 2 servings of Cajun Fries and is still hungry!
+Chef #2 finishes 5 servings of Banana Split and places it on the conveyor belt.
+Diner #2 finishes eating 4 servings of Hamburger and is still hungry!
+Diner #10 wants 2 servings of food!
+Diner #2 wants 3 servings of food!
+Diner #5 begins to eat 5 servings of Banana Split
+Chef #2 begins to prepare 1 servings of Spicy Tuna Roll
+Diner #7 finishes eating 1 servings of Dumplings and is still hungry!
+Diner #7 wants 9 servings of food!
+Chef #1 finishes 2 servings of French Fries and places it on the conveyor belt.
+Chef #2 finishes 1 servings of Spicy Tuna Roll and places it on the conveyor belt.
+Chef #2 begins to prepare 1 servings of Dragon Roll
+Diner #8 begins to eat 2 servings of French Fries
+Chef #1 begins to prepare 2 servings of French Fries
+Diner #7 begins to eat 1 servings of Spicy Tuna Roll
+Chef #2 finishes 1 servings of Dragon Roll and places it on the conveyor belt.
+Chef #2 begins to prepare 5 servings of Banana Split
+Diner #2 begins to eat 1 servings of Dragon Roll
+Diner #7 finishes eating 1 servings of Spicy Tuna Roll and is still hungry!
+Diner #8 finishes eating 2 servings of French Fries and is still hungry!
+Diner #8 wants 5 servings of food!
+Diner #7 wants 8 servings of food!
+Chef #1 finishes 2 servings of French Fries and places it on the conveyor belt.
+Diner #5 finishes eating 5 servings of Banana Split and is full!
+Diner #9 begins to eat 2 servings of French Fries
+Chef #1 begins to prepare 2 servings of Strawberry Shortcake
+Diner #5 exits the restaurant!
+Diner #2 finishes eating 1 servings of Dragon Roll and is still hungry!
+Diner #2 wants 2 servings of food!
+Diner #9 finishes eating 2 servings of French Fries and is still hungry!
+Chef #1 finishes 2 servings of Strawberry Shortcake and places it on the conveyor belt.
+Diner #9 wants 5 servings of food!
+Diner #7 begins to eat 2 servings of Strawberry Shortcake
+Chef #1 begins to prepare 2 servings of Cajun Fries
+Chef #2 finishes 5 servings of Banana Split and places it on the conveyor belt.
+Chef #2 begins to prepare 1 servings of Dumplings
+Diner #2 begins to eat 5 servings of Banana Split
+Chef #2 finishes 1 servings of Dumplings and places it on the conveyor belt.
+Diner #7 finishes eating 2 servings of Strawberry Shortcake and is still hungry!
+Diner #7 wants 6 servings of food!
+Chef #1 finishes 2 servings of Cajun Fries and places it on the conveyor belt.
+Diner #9 begins to eat 1 servings of Dumplings
+Chef #2 begins to prepare 2 servings of Cajun Fries
+Diner #10 begins to eat 2 servings of Cajun Fries
+Chef #1 begins to prepare 5 servings of Banana Split
+Diner #9 finishes eating 1 servings of Dumplings and is still hungry!
+Diner #9 wants 4 servings of food!
+Chef #2 finishes 2 servings of Cajun Fries and places it on the conveyor belt.
+Chef #2 begins to prepare 1 servings of Dumplings
+Diner #10 finishes eating 2 servings of Cajun Fries and is full!
+Diner #2 finishes eating 5 servings of Banana Split and is full!
+Diner #10 exits the restaurant!
+Diner #7 begins to eat 2 servings of Cajun Fries
+Diner #2 exits the restaurant!
+Chef #2 finishes 1 servings of Dumplings and places it on the conveyor belt.
+Chef #2 begins to prepare 3 servings of Shrimp Tempura
+Diner #9 begins to eat 1 servings of Dumplings
+Chef #1 finishes 5 servings of Banana Split and places it on the conveyor belt.
+Chef #1 begins to prepare 2 servings of Pepperoni Pizza
+Diner #7 finishes eating 2 servings of Cajun Fries and is still hungry!
+Diner #7 wants 4 servings of food!
+Diner #8 begins to eat 5 servings of Banana Split
+Diner #9 finishes eating 1 servings of Dumplings and is still hungry!
+Diner #9 wants 3 servings of food!
+Chef #2 finishes 3 servings of Shrimp Tempura and places it on the conveyor belt.
+Chef #1 finishes 2 servings of Pepperoni Pizza and places it on the conveyor belt.
+Diner #7 begins to eat 3 servings of Shrimp Tempura
+Chef #2 begins to prepare 1 servings of Spicy Tuna Roll
+Diner #9 begins to eat 2 servings of Pepperoni Pizza
+Chef #1 begins to prepare 1 servings of Spicy Tuna Roll
+Chef #1 finishes 1 servings of Spicy Tuna Roll and places it on the conveyor belt.
+Chef #1 begins to prepare 5 servings of Banana Split
+Chef #2 finishes 1 servings of Spicy Tuna Roll and places it on the conveyor belt.
+Chef #2 begins to prepare 1 servings of Coffee
+Diner #8 finishes eating 5 servings of Banana Split and is full!
+Diner #9 finishes eating 2 servings of Pepperoni Pizza and is still hungry!
+Diner #8 exits the restaurant!
+Diner #9 wants 1 servings of food!
+Diner #9 begins to eat 1 servings of Spicy Tuna Roll
+Chef #2 finishes 1 servings of Coffee and places it on the conveyor belt.
+Diner #7 finishes eating 3 servings of Shrimp Tempura and is still hungry!
+Diner #9 finishes eating 1 servings of Spicy Tuna Roll and is full!
+Chef #2 begins to prepare 4 servings of Hamburger
+Diner #9 exits the restaurant!
+Diner #7 wants 1 servings of food!
+Diner #7 begins to eat 1 servings of Spicy Tuna Roll
+Diner #7 finishes eating 1 servings of Spicy Tuna Roll and is full!
+Diner #7 exits the restaurant!
+Chef #1 finishes 5 servings of Banana Split and places it on the conveyor belt.
+Chef #2 finishes 4 servings of Hamburger and places it on the conveyor belt.
+Chez Woolie is closing for the night!

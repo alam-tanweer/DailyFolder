@@ -1,0 +1,43 @@
+Unit 10 Mini-Practicum
+
+The goal of these "mini practica" is to give you practice with coding problems
+similar to those that you will see on the midterm practica. You will be 
+required to solve each problem with minimal assistance. You should use these
+mini-practica as an opportunity to gauge your preparedness for the exams.
+
+You should create a new package under unit11 named 'practicum' and place all
+of your required files in that package.
+
+Each mini-practicum counts as a homework assignment. 
+==============================================================================
+
+1. A knock knock jokes consists of three parts.
+   a. Knock Knock
+      Who's There?
+   b. <some name>
+      <some name> who?
+   c. <punch line>
+      Ha ha, funny joke!
+
+   You have been provided a UI client ("view/knockknock.html") that can be used
+   to send the three parts to a server. The UI will always start with "Knock knock"
+   and the user will enter the <some name> and <punch line>. Use the red button to
+   send each part.
+
+   Hint: Don't waste a lot of time looking at the HTML file, it will only slow
+   you down. You only need to understand the 3 parts listed above.
+
+2. You have been provided the httpserver files from Unit 10. Use them to write A
+   knock knock sever in the practicum package that works with the provided UI. Start
+   by creating a "KnockKnockHandler.java" RequestHandler in the "model" package. The 
+   handler should respond appropriately to each of the 3 knock knock cases. 
+
+   You can chose the final response which isn't part of the standard knock knock jokes
+   but will be required to meet the HTTP protocol.
+
+   A test file has been provided for you ("model\KnockKnockHandlerTest.java") in the 
+   test package. If it passes the UI should work with your handler.
+
+3. Create a "KnockKnockServer.java" file in the practicum package. It should use the 
+   httpserver files and your solution from part 2 to run a web server on port 8080.
+   Run the server and use the provided client to tell the server a knock knock joke.

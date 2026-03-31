@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knock Knock Client</title>
+  <style>
+    :root {
+      --paper: #fffdf8;
+      --ink: #2b2620;
+      --accent: #cd4d00;
+      --accent-strong: #9f3c00;
+      --card-shadow: 0 14px 38px rgba(43, 38, 32, 0.16);
+      --line: #e6d8c4;
+      --muted: #6d675e;
+      --ok: #216e39;
+      --warn: #8a3c1d;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Trebuchet MS", "Gill Sans", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 15%, #ffecbb 0%, transparent 25%),
+        radial-gradient(circle at 85% 90%, #ffd7b0 0%, transparent 30%),
+        linear-gradient(165deg, #fff8ec 0%, #ffe5cc 55%, #ffd5b2 100%);
+      padding: 24px;
+      display: grid;
+      place-items: center;
+    }
+
+    .panel {
+      width: min(840px, 100%);
+      background: var(--paper);
+      border: 2px solid #f2e4d0;
+      border-radius: 18px;
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 20px 24px;
+      background: repeating-linear-gradient(
+        -45deg,
+        #ffe9d2,
+        #ffe9d2 12px,
+        #fff4e8 12px,
+        #fff4e8 24px
+      );
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.6rem, 3.6vw, 2.3rem);
+      letter-spacing: 0.02em;
+    }
+
+    .sub {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .content {
+      padding: 20px 24px 24px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .row {
+      display: grid;
+      gap: 8px;
+    }
+
+    label {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    input[type="url"],
+    input[type="text"] {
+      width: 100%;
+      border: 1px solid #dcc9ae;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 1rem;
+      color: var(--ink);
+      background: #fffcf6;
+    }
+
+    input:focus {
+      outline: 3px solid #ffd4b5;
+      border-color: #cb7a45;
+    }
+
+    form {
+      display: grid;
+      gap: 10px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      border: 0;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: transform 0.16s ease, filter 0.16s ease;
+    }
+
+    button:hover { transform: translateY(-1px); }
+
+    button:active { transform: translateY(0); }
+
+    .primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .primary:hover { filter: brightness(0.95); }
+
+    .secondary {
+      background: #f0dfc7;
+      color: #3f3122;
+    }
+
+    .secondary:hover { background: #ebd5b8; }
+
+    .highlight-red {
+      background: #c41f15;
+      color: #fff;
+      box-shadow: 0 0 0 3px rgba(196, 31, 21, 0.22);
+    }
+
+    .highlight-red:hover {
+      background: #a91a11;
+    }
+
+    .status {
+      border: 1px solid var(--line);
+      background: #fff7ed;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 0.95rem;
+      color: var(--warn);
+      animation: reveal 260ms ease-out;
+    }
+
+    .status.ok {
+      color: var(--ok);
+      background: #eff9f0;
+    }
+
+    .status.muted {
+      color: var(--muted);
+      background: #f8f5ef;
+    }
+
+    .log {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fffaf3;
+      padding: 10px;
+      max-height: 260px;
+      overflow: auto;
+      font-family: Consolas, monospace;
+      font-size: 0.9rem;
+      display: grid;
+      gap: 7px;
+    }
+
+    .log-item {
+      padding: 6px 7px;
+      border-radius: 8px;
+      background: #fff;
+      border: 1px solid #f2e5d3;
+      opacity: 0;
+      transform: translateY(6px);
+      animation: reveal 260ms ease forwards;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    @keyframes reveal {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 620px) {
+      body { padding: 14px; }
+      .hero, .content { padding: 16px; }
+      .actions { display: grid; }
+      button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <section class="panel">
+    <header class="hero">
+      <h1>Knock Knock Client</h1>
+      <p class="sub">Start by pressing the "Knock knock" button.</p>
+    </header>
+
+    <div class="content">
+      <form id="jokeForm" method="post" action="http://localhost:8080/">
+        <div class="row">
+          <label for="lineInput">Your line</label>
+          <input id="lineInput" type="text" placeholder="Type your line, then send via POST" autocomplete="off">
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="secondary highlight-red" id="actionBtn">"Knock knock"</button>
+        </div>
+      </form>
+
+      <div id="status" class="status muted">Ready. Sending to http://localhost:8080/.</div>
+
+      <div id="log" class="log" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById('jokeForm');
+    const lineInput = document.getElementById('lineInput');
+    const actionBtn = document.getElementById('actionBtn');
+    const statusEl = document.getElementById('status');
+    const logEl = document.getElementById('log');
+
+    function createSessionId() {
+      return 'kk-' + Math.random().toString(36).slice(2, 10) + '-' + Date.now();
+    }
+
+    let sessionId = createSessionId();
+    let firstMessageSent = false;
+
+    function updateButtonState() {
+      actionBtn.textContent = firstMessageSent ? 'Send Next Line' : '"Knock knock"';
+    }
+
+    function setStatus(text, kind) {
+      statusEl.textContent = text;
+      statusEl.className = 'status ' + kind;
+    }
+
+    function addLog(prefix, value) {
+      const item = document.createElement('div');
+      item.className = 'log-item';
+      item.textContent = '[' + new Date().toLocaleTimeString() + '] ' + prefix + ': ' + value;
+      logEl.prepend(item);
+    }
+
+    async function postLine(line) {
+      const endpoint = 'http://localhost:8080/';
+
+      try {
+        addLog('SEND', line);
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            'x-session-id': sessionId,
+            'Content-Type': 'text/plain; charset=utf-8'
+          },
+          body: line
+        });
+
+        const text = (await response.text()).trim();
+        addLog('RECV', text);
+        setStatus('Server replied: ' + text, 'ok');
+        if (!firstMessageSent) {
+          firstMessageSent = true;
+          updateButtonState();
+        }
+      } catch (error) {
+        setStatus('Request failed: ' + error.message, 'muted');
+      }
+    }
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!firstMessageSent) {
+        await postLine('Knock knock');
+        lineInput.focus();
+        return;
+      }
+
+      const line = lineInput.value.trim();
+      if (!line) {
+        setStatus('Type a line to send.', 'muted');
+        return;
+      }
+
+      await postLine(line);
+      lineInput.value = '';
+      lineInput.focus();
+    });
+
+    updateButtonState();
+  </script>
+</body>
+</html>
