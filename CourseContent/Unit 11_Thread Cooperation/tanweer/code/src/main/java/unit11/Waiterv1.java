@@ -32,9 +32,12 @@ public class Waiterv1 { //implements Runnable{
 
         Waiterv1 waiter = new Waiterv1(lock, alarm);
         ExecutorService service = Executors.newCachedThreadPool();
-        service.execute(() -> waiter.run());
-        // service.submit(waiter);
-        // service.submit(() -> waiter.run());
+        
+        // service.execute(() -> waiter.run());
+
+        // service.submit(waiter); // if using runnable
+        
+        service.submit(() -> waiter.run());
 
         System.out.println("Thread started!");
     }
