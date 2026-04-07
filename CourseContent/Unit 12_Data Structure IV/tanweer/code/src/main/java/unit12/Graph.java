@@ -11,13 +11,13 @@ public interface Graph<E> {
     void connectUndirected(E a, E b);
     boolean connected(E a, E b);
 
-    // default boolean bfSearch(E start, E end) {
-    //     throw new UnsupportedOperationException("BFS Not Implemented!");
-    // }
+    default boolean bfSearch(E start, E end) {
+        throw new UnsupportedOperationException("BFS Not Implemented!");
+    }
 
-    // default List<E> bfPath(E start, E end) {
-    //     throw new UnsupportedOperationException("BFP Not Implemented!");
-    // }
+    default List<E> bfPath(E start, E end) {
+        throw new UnsupportedOperationException("BFP Not Implemented!");
+    }
 
     // default boolean dfSearch(E start, E end) {
     //     throw new UnsupportedOperationException("DFS Not Implemented!");
