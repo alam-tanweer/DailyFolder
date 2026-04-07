@@ -1,0 +1,21 @@
+public static Graph<String> readGraph(String filename) throws IOException {
+    FileReader fr = new FileReader(filename);
+    BufferedReader reader = new BufferedReader(fr);
+    Graph<String> graph = new AdjacencyGraph<>();
+
+    boolean noEndOfFile = true;
+    while(noEndOfFile) {
+        String line = reader.readLine();
+        if(line == null) {
+            noEndOfFile = false;
+        } else {
+            String[] tokens = line.split(" ");
+            addIfNotPresent(tokens[0], graph);
+                for(int i=1; i<tokens.length; i++) {
+                    addIfNotPresent(tokens[i], graph);
+                graph.connectUndirected(tokens[0], tokens[i]);
+            }
+        }
+    }
+    return graph;        
+}

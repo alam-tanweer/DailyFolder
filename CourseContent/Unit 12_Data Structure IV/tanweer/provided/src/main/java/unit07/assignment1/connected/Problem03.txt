@@ -1,0 +1,12 @@
+Modify the BFS algorithm as follows:
+
+1. Set count = 0
+2. Create an empty set.
+3. For each vertex V in the graph:
+   a. If V is already in the set, skip it.
+   b. Otherwise:
+      i.   Add V to the set.
+      ii.  Increment count
+      iii. Make an empty queue and add V to it.
+      iv.  Run a BFS from V (copy paste).
+4. return count.

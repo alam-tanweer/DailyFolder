@@ -1,0 +1,31 @@
+package Day03.assignment;
+
+public class Square {
+    private final int row;
+    private final int column;
+
+    public Square(int row, int column) {
+        this.row = row;
+        this.column = column;
+    }
+
+    public Square(String row, String col) {
+        this(Integer.parseInt(row), Integer.parseInt(col));
+    }
+
+    @Override
+    public int hashCode() {
+        return row*7 + col*11; // anything reasonable here
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Square) {
+            Square other = (Square)obj;
+            return this.row == other.row && this.column == other.column;
+        } else {
+            return false;
+        }
+    }
+    
+}

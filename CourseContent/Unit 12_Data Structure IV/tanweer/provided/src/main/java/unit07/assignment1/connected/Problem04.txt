@@ -1,0 +1,27 @@
+// The goal here is for students to get started, not to finish (necessarily)
+public int countConnectedComponents() {
+    Set<Vertex<E>> visited = new HashSet<>();
+    int count = 0;
+    for(Vertex<E> vertex : vertices.values()) {
+        if(!visited.contains(vertex)) {
+            count += 1;
+
+            // copied/pasted from BFS
+            Queue<Vertex<E>> queue = new LinkedList<>();
+            queue.add(vertex);
+            while(!queue.isEmpty()) {
+                Vertex<E> next = queue.poll();
+                for(Vertex<E> neighbor : next.getNeighbors()) {
+                    if(!visited.contains(neighbor)) {
+                        visited.add(neighbor);
+                        queue.add(neighbor);
+                    }
+                }
+            }
+            // end copy/paste
+
+        }
+    }
+
+    return count;
+}

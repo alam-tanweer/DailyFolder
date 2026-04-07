@@ -1,0 +1,11 @@
+public static Graph<Square> makeBoard(int rows, int cols) {
+    Graph<Square> chessboard = new AdjacencyGraph<>();
+    // add the squares
+    for(int row=0; row<rows; row++) {
+        for(int col=0; col<cols; col++) {
+            Square square = new Square(row, col);
+            chessboard.add(square);
+        }
+    }
+    return chessboard;
+}

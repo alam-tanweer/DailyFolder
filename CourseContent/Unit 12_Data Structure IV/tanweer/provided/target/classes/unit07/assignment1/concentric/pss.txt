@@ -1,0 +1,43 @@
+#2 
+        graph = new AdjacencyGraph<>();
+        
+        try(FileReader fr = new FileReader(filename);
+            BufferedReader reader = new BufferedReader(fr)) {
+            String line = null;
+            while((line = reader.readLine()) != null) {        
+                String[] tokens = line.split(", ");
+                if(!graph.contains(tokens[0])) {
+            	     graph.add(tokens[0]);
+                }
+                for(int i=1; i<tokens.length; i++) {
+                    if(!graph.contains(tokens[i])) {
+            		graph.add(tokens[i]);
+        	    }
+                    graph.connectUndirected(tokens[0], tokens[i]);
+                }        
+            }     
+        }
+
+#4
+
+   public Map<String, Integer> distanceMap(String start){    
+        Vertex<String> s = vertices.get(start);
+
+        Map<String, Integer> distanceMap = new HashMap<>(); 
+        Queue<Vertex<String>> queue = new LinkedList<>();
+        distanceMap.put(start, 0);
+        queue.add(s);
+
+        while(!queue.isEmpty()) {
+            Vertex<String> v = queue.poll();
+            int level = distanceMap.get(v.getValue()) + 1;
+            for(Vertex<String> n : v.getNeighbors()) {    
+                if(!distanceMap.containsKey(n.getValue())){
+                    distanceMap.put(n.getValue(), level);
+                    queue.add(n);
+                }
+            }    
+        }
+        return distanceMap;
+    }
+

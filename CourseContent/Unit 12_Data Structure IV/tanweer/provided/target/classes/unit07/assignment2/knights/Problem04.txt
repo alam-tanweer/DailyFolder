@@ -1,0 +1,7 @@
+System.out.print("Enter the start and end coordinates: ");
+String coords = scanner.nextLine();
+String[] tokens = coords.split(" ");
+Square start = new Square(tokens[0], tokens[1]);
+Square end = new Square(tokens[2], tokens[3]);
+List<Square> dfPath = chessboard.dfPath(start, end);
+System.out.println(dfPath);
