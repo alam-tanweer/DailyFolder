@@ -1,0 +1,27 @@
+public class Cell {
+    private final int row;
+    private final int col;
+    private final CellType type;
+
+    public Cell(int row, int col, CellType state) {
+        this.row = row;
+        this.col = col;
+        this.type = state;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Cell) {
+            Cell other = (Cell)obj;
+            return this.row == other.row && this.col == other.col;
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public int hashCode() {
+        return (int)(Math.pow(27, row) + Math.pow(31, col));
+    }
+}
+

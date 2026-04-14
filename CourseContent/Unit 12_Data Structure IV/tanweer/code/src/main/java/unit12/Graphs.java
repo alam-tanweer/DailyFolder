@@ -34,4 +34,17 @@ public class Graphs {
 
         return graph;
     }
+
+    public static void main(String[] args){
+
+        Graph<String> graph = makeGraph();
+        // System.out.println(graph.bfSearch("A", "F1"));
+        // System.out.println(graph.bfPath("A", "G"));
+
+
+        // System.out.println(graph.dfSearch("A", "G1"));
+        System.out.println(graph.dfPath("A", "G"));
+        
+
+    }
 }

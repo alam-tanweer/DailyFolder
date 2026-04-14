@@ -1,0 +1,75 @@
+Problm 01:
+See equals(Object) and hashCode() methods in assignment/City.java
+
+These are just examples; any reasonable solution would be fine.
+
+    @Override
+    public boolean equals(Object o) {
+        if(o instanceof City) {
+            City city = (City)o;
+            return this.longitude == city.longitude 
+                && this.latitude == latitude;
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public int hashCode() {
+        return toString().hashCode();
+    }
+
+
+Problem 02:
+See distanceFrom(City other) in assignment/City.java
+
+    public double distanceFrom(City other) {
+        double latDiff = this.latitude - other.latitude;
+        double lngDiff = this.longitude - other.longitude;
+
+        return Math.sqrt(latDiff*latDiff + lngDiff*lngDiff);
+    }
+
+Problem 03:
+See readCities(String filename) in assignment/TravelingSalesman.java
+
+        try(FileReader fr = new FileReader(filename);
+            BufferedReader reader = new BufferedReader(fr)) {
+            List<City> cities = new LinkedList<>();
+
+            reader.readLine(); // skip header
+            String line = reader.readLine();
+            while(line != null) {
+                String[] record = line.split(",");
+                String name = record[0];
+                String state = record[1];
+                double lat = Double.parseDouble(record[2]);
+                double lng = Double.parseDouble(record[3]);
+                City city = new City(name, state, lat, lng);
+                cities.add(city);
+
+                line = reader.readLine();
+            }
+
+            return cities;
+        }
+
+Problem 04:
+See makeGraph(List<City> cities) in assignment/TravelingSalesman.java
+
+    public static WGraph<City> makeGraph(List<City> cities) {
+        WGraph<City> graph = new WAdjacencyGraph<>();
+        for(City city : cities) {
+            graph.add(city);
+        }
+
+        for(int i=0; i<cities.size(); i++) {
+            City city = cities.get(i);
+            for(int j=i+1; j<cities.size(); j++) {
+                City neighbor = cities.get(j);
+                graph.connect(city, neighbor, city.distanceFrom(neighbor));
+            }
+        }
+
+        return graph;
+    }

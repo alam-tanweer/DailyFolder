@@ -1,0 +1,25 @@
+public static Cell parseCell(String cellString) {
+    String[] tokens = cellString.split("-");
+
+    CellType state = null;
+    switch(tokens[0]) {
+        case "PE":
+            state = CellType.PELLET;
+            break;
+        case "PP":
+            state = CellType.POWER_PELLET;
+            break;
+        case "GH":
+            state = CellType.GHOST;
+            break;
+        case "PM":
+            state = CellType.PAC_MAN;
+            break;
+        default:
+            throw new IllegalStateException("Unknown cell state " 
+                + tokens[0]);
+    }
+    int row = Integer.parseInt(tokens[1]);
+    int col = Integer.parseInt(tokens[2]);
+    return new Cell(row, col, state);
+}

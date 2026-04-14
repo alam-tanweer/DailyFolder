@@ -19,11 +19,11 @@ public interface Graph<E> {
         throw new UnsupportedOperationException("BFP Not Implemented!");
     }
 
-    // default boolean dfSearch(E start, E end) {
-    //     throw new UnsupportedOperationException("DFS Not Implemented!");
-    // }
+    default boolean dfSearch(E start, E end) {
+        throw new UnsupportedOperationException("DFS Not Implemented!");
+    }
 
-    // default List<E> dfPath(E start, E end) {
-    //     throw new UnsupportedOperationException("DFP Not Implemented!");
-    // }
+    default List<E> dfPath(E start, E end) {
+        throw new UnsupportedOperationException("DFP Not Implemented!");
+    }
 }
