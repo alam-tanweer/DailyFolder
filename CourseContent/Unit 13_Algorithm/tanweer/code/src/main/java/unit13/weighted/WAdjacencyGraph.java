@@ -1,7 +1,13 @@
 package unit13.weighted;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
+
+import unit13.graphs.Vertex;
 
 /**
  * An implementation of an graph using adjacency lists with weighted edges.
@@ -117,4 +123,34 @@ public class WAdjacencyGraph<E> implements WGraph<E> {
             return null;
         }
     }
+
+    @Override
+    public WPath<E> nearestNeighbor(E start, E end) {
+        WVertex<E> s = vertices.get(start);
+        WVertex<E> e = vertices.get(end);
+
+        Set<WVertex<E>> visited = new HashSet<>();
+        visited.add(s);
+
+        return visitNearestNeighbor(s, e, visited);
+    }
+
+    private WPath<E> visitNearestNeighbor(WVertex<E> v, WVertex<E> e, Set<WVertex<E>> visited) {
+        if(v == e) {
+            WPath<E> path = new WPath<>(e.getValue());
+            return path;
+        } else {
+            for(WVertex<E> neighbor : v.getNearestNeighbors()) {
+                if(!visited.contains(neighbor)) {
+                    visited.add(neighbor);
+                    WPath<E> path = visitNearestNeighbor(neighbor, e, visited);
+                    if(path != null) {
+                        path.prepend(v.getValue(),v.weight(neighbor));
+                        return path;
+                    }
+                }
+            }
+            return null;
+        }
+    }  
 }

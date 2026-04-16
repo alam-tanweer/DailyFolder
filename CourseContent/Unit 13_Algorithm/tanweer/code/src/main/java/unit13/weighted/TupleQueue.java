@@ -14,6 +14,8 @@ public class TupleQueue<E> {
         queue.add(element);
     }
 
+    //Get distance returns the distance from bigining.
+    //Return the the Path Tuple which is close
     public PathTuple<E> dequeue() {
         int index = 0;
         PathTuple<E> closest = queue.get(index);

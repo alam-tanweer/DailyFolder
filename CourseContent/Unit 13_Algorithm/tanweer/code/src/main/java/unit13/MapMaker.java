@@ -50,18 +50,18 @@ public class MapMaker {
         City city1 = new City("Boston", "Massachusetts", 42.3601, -71.0589);
         City city2 = new City("Los Angeles", "California" ,34.0522,-118.2437);
 
-        // WPath<City> nnPath = map.nearestNeighbor(city1, city2);
-        // for (int i=0; i<nnPath.size(); i++) {
-        //     System.out.println(nnPath.get(i));
-        // }
-        // System.out.println("total distance: " + nnPath.getDistance());
-        // System.out.println("************************************************");
+        WPath<City> nnPath = map.nearestNeighbor(city1, city2);
+        for (int i=0; i<nnPath.size(); i++) {
+            System.out.println(nnPath.get(i));
+        }
+        System.out.println("total distance: " + nnPath.getDistance());
+        System.out.println("************************************************");
 
-        // WPath<City> dsPath = map.dijkstrasPath(city1, city2);
-        // for (int i=0; i<dsPath.size(); i++) {
-        //     System.out.println(dsPath.get(i));
-        // }
-        // System.out.println("total distance: " + dsPath.getDistance());
+        WPath<City> dsPath = map.dijkstrasPath(city1, city2);
+        for (int i=0; i<dsPath.size(); i++) {
+            System.out.println(dsPath.get(i));
+        }
+        System.out.println("total distance: " + dsPath.getDistance());
     }
 }
 

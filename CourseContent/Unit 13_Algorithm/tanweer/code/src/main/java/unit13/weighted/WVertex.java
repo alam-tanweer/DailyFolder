@@ -1,6 +1,10 @@
 package unit13.weighted;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -8,7 +12,7 @@ import java.util.Map;
  * 
  * @author GCCIS Faculty
  */
-public class WVertex<E> {
+public class WVertex<E> implements Comparator<WVertex<E>>{
     private final E value;
     private final Map<WVertex<E>, Double> neighbors;
 
@@ -68,5 +72,19 @@ public class WVertex<E> {
     @Override
     public String toString() {
         return value.toString();
+    }
+
+    @Override
+    public int compare(WVertex<E> a, WVertex<E> b) {
+        double weightA = neighbors.get(a);
+        double weightB = neighbors.get(b);
+
+        return weightA < weightB ? -1 : 1;
+    }
+
+    public List<WVertex<E>> getNearestNeighbors() {
+        List<WVertex<E>> nearest = new ArrayList<>(neighbors.keySet());
+        Collections.sort(nearest, this);
+        return nearest;
     }
 }
