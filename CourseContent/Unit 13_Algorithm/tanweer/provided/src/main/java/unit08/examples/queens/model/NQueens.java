@@ -109,6 +109,7 @@ public class NQueens implements Configuration<NQueens> {
         // for(Configuration successor : successors) {
         //     System.out.println(successor);
         // }
+        System.out.println("");
         Backtracker<NQueens> backtracker = new Backtracker<>(false);
         NQueens nQueens = new NQueens(4);
         NQueens solution = backtracker.solve(nQueens);

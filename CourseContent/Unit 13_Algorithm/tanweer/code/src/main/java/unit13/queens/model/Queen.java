@@ -1,7 +1,7 @@
 package unit13.queens.model;
 
 /**
- * Represents a Queen in the N-Queens problem. Essentially a row, column 
+ * Represents a Queen in the N-Queens problem. Essentially a row, column
  * location on the board and some utility functions.
  */
 public class Queen {
@@ -48,7 +48,6 @@ public class Queen {
         return row;
     }
 
-
     /**
      * Returns the column at which the queen has been placed on the board.
      * 
@@ -80,19 +79,23 @@ public class Queen {
      * @return True if the queen can attack the specified location.
      */
     public boolean canAttack(int row, int col) {
-        int rowDelta = this.row - row;
-        int colDelta = this.col - col;
+        return this.row == row
+                || this.col == col
+                || Math.abs(this.row - row) == Math.abs(this.col - col);
 
-        return rowDelta == 0 
-            || colDelta == 0
-            || rowDelta == colDelta
-            || rowDelta == -colDelta;
+        // int rowDelta = this.row - row;
+        // int colDelta = this.col - col;
+
+        // return rowDelta == 0
+        // || colDelta == 0
+        // || rowDelta == colDelta
+        // || rowDelta == -colDelta;
     }
 
     @Override
     public boolean equals(Object obj) {
-        if(obj instanceof Queen) {
-            Queen other = (Queen)obj;
+        if (obj instanceof Queen) {
+            Queen other = (Queen) obj;
             return this.row == other.row && this.col == other.col;
         } else {
             return false;
@@ -108,5 +111,5 @@ public class Queen {
     public String toString() {
         return string;
     }
-    
+
 }

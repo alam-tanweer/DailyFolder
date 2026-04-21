@@ -28,8 +28,11 @@ import javafx.scene.layout.Priority;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
+import unit13.backtracker.Backtracker;
 import unit13.queens.model.Board;
 import unit13.queens.model.BoardObserver;
+import unit13.queens.model.NQueens;
+import unit13.queens.model.Queen;
 import unit13.queens.model.Square;
 
 public class NQueensGUI extends Application implements BoardObserver {

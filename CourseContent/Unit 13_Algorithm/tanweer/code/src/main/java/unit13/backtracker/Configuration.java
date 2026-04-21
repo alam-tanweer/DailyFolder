@@ -11,6 +11,7 @@ import java.util.Collection;
  * @author GCCIS Faculty
  */
 public interface Configuration<C extends Configuration<C>> {
+
     /**
      * Get the collection of successors from the current one.
      * 

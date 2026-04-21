@@ -1,0 +1,21 @@
+Total
+
+Question 1 -> 40
+
+Question 2 -> 40
+
+Question 3 -> 20
+
+
+Question 1 -  Java Socket Client Implementation 
+
+
+
+
+Question 2 - Multithreading with coordination
+
+
+
+
+
+Question 3 - Sets & Dictionary 
