@@ -1,0 +1,30 @@
+Jumble Solver is a backtracking solution to solving jumble word puzzles.
+For example:  Jumble = fhsi  Solved = fish.
+
+The solver has a reference to a Dictionary object which provides the following
+methods:
+  isWord(string): returns true if the string is a word in the dictionary.
+  isPrefix(): returns true if the string is a prefix for at least one word in
+              the diectionary.
+
+Complete the JumbleSolver backtracking methods in JumbleSolver.java
+    getSuccessors()
+    isValid()
+    isGoal()
+
+Expected Output for the provided main:
+No solution found for: zzz
+unf solution: Word: fun, Remaining Letters: []
+wlyasa solution: Word: always, Remaining Letters: []
+rshtea solution: Word: hearts, Remaining Letters: []
+blscu solution: Word: clubs, Remaining Letters: []
+dmersia solution: Word: misread, Remaining Letters: []
+seay solution: Word: easy, Remaining Letters: []
+eopodl solution: Word: poodle, Remaining Letters: []
+No solution found for: foobar
+
+Hints:
+1) ArrayList has a copy constructor
+
+2) JumbleSolver implements Configuration which means 
+   getSuccessors() should create a collection of ALL possible next Configurations.

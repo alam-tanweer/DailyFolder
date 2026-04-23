@@ -1,0 +1,10 @@
+dog cat
+apple banana
+zebra ant
+red blue
+sun moon
+coffee tea
+spring fall
+alpha beta
+left right
+happy sad

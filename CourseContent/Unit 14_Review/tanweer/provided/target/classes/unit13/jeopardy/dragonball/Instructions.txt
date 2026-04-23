@@ -1,0 +1,63 @@
+Examine the Cannon and Color classes. The cannon fires fireballs of various
+colors.
+
+- Define a new Java class named "Dragon" and use your preferred method to make it
+  into a thread.
+- Define any needed fields and an initialzing constructor.
+- When executing, each Dragon thread should do the following:
+  - While the cannon is not empty and the next fireball is not the same color as
+    the dragon:
+    - The dragon should wait
+  - When the next fireball is the same color as the dragon, the dragon should stop
+    waiting
+    - If the cannon is now empty, the dragon can exit
+    - If the cannon is not empty, it should fire
+
+Add print statements at the appropriate locations to match the example Output
+below.
+
+In Main:
+  - Create a Cannon with 20 fireballs
+  - Create any other objects that your Dragon class may needed
+  - Create and start a Dragon thread for each color
+
+Hints:
+  - The cannon is accessed by all dragons at the same time.
+  - When the cannon fires, all dragons should be notified to peek at the cannon
+    to see if the next fireball is their color.
+
+Example Output
+Cannon loaded with 5 fireballs: [RED, BLUE, YELLOW, BLUE, YELLOW]
+Cannon ready to fire RED fireball!
+Cannon firing RED fireball!
+RED Dragon catches RED fireball!
+Cannon ready to fire BLUE fireball!
+RED Dragon waits for RED fireball...
+Cannon ready to fire BLUE fireball!
+Cannon firing BLUE fireball!
+BLUE Dragon catches BLUE fireball!
+Cannon ready to fire YELLOW fireball!
+BLUE Dragon waits for BLUE fireball...
+Cannon ready to fire YELLOW fireball!
+GREEN Dragon waits for GREEN fireball...
+Cannon ready to fire YELLOW fireball!
+Cannon firing YELLOW fireball!
+YELLOW Dragon catches YELLOW fireball!
+Cannon ready to fire BLUE fireball!
+YELLOW Dragon waits for YELLOW fireball...
+Cannon ready to fire BLUE fireball!
+RED Dragon waits for RED fireball...
+Cannon ready to fire BLUE fireball!
+Cannon firing BLUE fireball!
+BLUE Dragon catches BLUE fireball!
+Cannon ready to fire YELLOW fireball!
+BLUE Dragon waits for BLUE fireball...
+Cannon ready to fire YELLOW fireball!
+GREEN Dragon waits for GREEN fireball...
+Cannon ready to fire YELLOW fireball!
+Cannon firing YELLOW fireball!
+YELLOW Dragon catches YELLOW fireball!
+Cannon is empty! YELLOW Dragon is done.
+Cannon is empty! RED Dragon is done.
+Cannon is empty! BLUE Dragon is done.
+Cannon is empty! GREEN Dragon is done.

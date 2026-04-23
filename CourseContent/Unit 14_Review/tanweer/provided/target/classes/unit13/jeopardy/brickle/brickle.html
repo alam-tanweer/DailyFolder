@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Brickle</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: sans-serif;
+      background: #000000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px;
+      gap: 24px;
+    }
+
+    #header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid #3a3a3c;
+      padding-bottom: 12px;
+    }
+
+    #header img {
+      height: 80px;
+      width: auto;
+    }
+
+    h1 { font-size: 2rem; letter-spacing: 6px; color: #F76902; -webkit-text-stroke: 1px white; paint-order: stroke fill; }
+
+    #board {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .row {
+      display: flex;
+      gap: 6px;
+    }
+
+    .tile {
+      width: 62px;
+      height: 62px;
+      border: 2px solid #3a3a3c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      transition: background 0.3s;
+    }
+
+    .tile.correct  { background: #F76902; border-color: #F76902; color: #000; }
+    .tile.present  { background: #ffffff; border-color: #ffffff; color: #000; }
+    .tile.absent   { background: #000000; border-color: #000000; color: #fff; }
+    .tile.pending  { border-color: #999; }
+
+    #controls {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    #guess-input {
+      padding: 10px 14px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      background: #000000;
+      color: #fff;
+      border: 2px solid #818384;
+      border-radius: 4px;
+      width: 140px;
+      letter-spacing: 4px;
+    }
+
+    #guess-input:focus { outline: none; border-color: #fff; }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      background: #F76902;
+      color: #000;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:disabled { background: #3a3a3c; cursor: default; }
+
+    #message {
+      font-size: 1.1rem;
+      font-weight: bold;
+      min-height: 1.5em;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header">
+    <img src="balloonritchie.png" alt="Balloon Ritchie" />
+    <h1>BRICKLE</h1>
+    <img src="balloonritchie.png" alt="Balloon Ritchie" />
+  </div>
+
+  <div id="board">
+    <!-- 6 rows of 5 tiles -->
+    <div class="row" id="row-0"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+    <div class="row" id="row-1"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+    <div class="row" id="row-2"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+    <div class="row" id="row-3"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+    <div class="row" id="row-4"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+    <div class="row" id="row-5"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+  </div>
+
+  <div id="controls">
+    <input id="guess-input" type="text" maxlength="5" placeholder="GUESS" autocomplete="off" />
+    <button id="submit-btn" onclick="submitGuess()">ENTER</button>
+  </div>
+
+  <div id="message"></div>
+
+  <script>
+    const SERVER = "http://localhost:8080";
+
+    // Generate a unique session ID so each browser tab gets its own game.
+    const SESSION_ID = crypto.randomUUID();
+
+    let currentRow = 0;
+
+    function headers(withBody = false) {
+      const h = { "x-session-id": SESSION_ID };
+      if (withBody) h["Content-Type"] = "text/plain";
+      return h;
+    }
+
+    async function submitGuess() {
+      const input = document.getElementById("guess-input");
+      const guess = input.value.trim().toUpperCase();
+
+      if (guess.length !== 5) {
+        showMessage("Guess must be 5 letters");
+        return;
+      }
+
+      let feedback;
+      try {
+        const res = await fetch(`${SERVER}/guess`, {
+          method: "POST",
+          headers: headers(true),
+          body: guess
+        });
+        feedback = await res.text();
+      } catch (e) {
+        showMessage("Cannot reach server");
+        return;
+      }
+
+      if (feedback.startsWith("ERROR:")) {
+        showMessage(feedback);
+        return;
+      }
+
+      // Paint the current row's tiles.
+      const row = document.getElementById(`row-${currentRow}`);
+      const tiles = row.querySelectorAll(".tile");
+      for (let i = 0; i < 5; i++) {
+        const ch = feedback[i];
+        tiles[i].textContent = guess[i];
+        if (ch === "C")       tiles[i].classList.add("correct");
+        else if (ch === "P")  tiles[i].classList.add("present");
+        else                  tiles[i].classList.add("absent");
+      }
+
+      currentRow++;
+      input.value = "";
+
+      // Check game state.
+      const state = await (await fetch(`${SERVER}/gamestate`, { headers: headers() })).text();
+      if (state === "WON") {
+        showMessage("Brilliant!");
+        disableInput();
+      } else if (state === "LOST") {
+        showMessage("Game over.");
+        disableInput();
+      }
+    }
+
+    function showMessage(msg) {
+      document.getElementById("message").textContent = msg;
+    }
+
+    function disableInput() {
+      document.getElementById("guess-input").disabled = true;
+      document.getElementById("submit-btn").disabled = true;
+    }
+
+    // Allow pressing Enter to submit.
+    document.getElementById("guess-input").addEventListener("keydown", e => {
+      if (e.key === "Enter") submitGuess();
+    });
+
+    // Restrict input to letters only.
+    document.getElementById("guess-input").addEventListener("input", e => {
+      e.target.value = e.target.value.replace(/[^a-zA-Z]/g, "");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+A Farmer has a Fox, a Hen, and Seed (collectively known as cargo), that they
+need to transport to the other bank of the river by boat. 
+
+- There are two banks: East and West
+- The boat can travel from either bank to the other
+= On each trip from one bank to the other, the Farmer can travel with only one
+  of Fox, Hen, or Seed, or the Farmer can travel alone
+- The Farmer will need to make several trips from each bank to the other, alone
+  or with a single cargo item
+- The Fox and Hen cannot be left together on the bank opposite the Farmer or
+  else the Fox will eat the Hen
+- The Hen and Seed cannot be left together on the bank opposite the Famer or
+  else the Hen will eat the Seed
+- The Farmer, Fox, Hen, and Seed, start on the East bank
+- The algorithm stops when the Farmer, Fox, Hen, and Seed are on the West bank
+
+It is recommended that you begin by identifying the invalid and goal states from
+the description above.
+  
+Implement a backtracking algorithm to achieve this Goal by completing the
+following methods in the RiverCrossing class:
+- getSuccessors()
+- isValid()
+- isGoal()
+  
+Enumerations are provided for
+- River.Bank: EAST or WEST
+  - getOpposite(Bank bank) - helper method that returns the opposite bank of the
+    one given
+- Cargo: FOX, HEN, SEED
+  
+A River class is also provided and represents which bank the Farmer and each
+Cargo item is is located at a given point and provides these methods
+- River() - Constructor that initializes the start of the trip to the Farmer and
+  Cargo on East bank
+- River(River river) - A copy constructor
+- getFarmerLocation() - returns the bank that the Farmer is on
+- getCargo(Bank bank) - returns a set of Cargo that is on the given bank (may be
+  empty)
+- crossRiver(cargo) - The Farmer crosses the river to the opposite side with the
+  given Cargo item.  If the Farmer is crossing alone, the cargo parameter should
+  be null
+- toString(), equals(), hashCode()
+
+You should not need more methods to implement a solution and should not alter
+the Enumerations or River class.
+ 
+Example starting and ending configurations:
+Current config:
+EAST{Farmer [FOX, SEED, HEN]} ≈≈ WEST{[]}
+…
+        Goal config:
+        EAST{[]} ≈≈ WEST{Farmer [FOX, SEED, HEN]}

@@ -1,0 +1,3 @@
+Cannot sent message!
+Closed the stream.
+Client failed.

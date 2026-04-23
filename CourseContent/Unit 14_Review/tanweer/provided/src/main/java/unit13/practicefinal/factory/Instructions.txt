@@ -1,0 +1,23 @@
+You run a factory that builds 3 types of items: Widgets, Gizmos, and Doodads.
+There are 3 builders, one that builds each type.
+There is 1 conveyor belt that all 3 builders place their items on.
+There are 3 packers, one that packs each type into a box.
+
+Builder
+    - has an id, the item it builds, the number to build, and a reference to the conveyor belt
+    - the builder creates one item at a time and places it on the conveyor belt
+    - after the item has been placed on the conveyor belt, the builder notifies other builders
+      and packers
+    - this continues until the builder has made the appropriate number of its' item
+
+Conveyor belt
+    - a shared resource that all builders and packers have access to
+
+Packer
+    - has an id, the item it packs, the expected number to pack and a reference to the conveyor belt
+    - also has a box where it places each item it gets off the conveyor belt
+    - accessors for its' id and box
+    - the packer monitors the conveyor belt for items
+    - if the first item on the conveyor belt is the item it packs, it removes it
+    - otherwise, the packer should not remove the item, and instead wait
+    - one the packer has packed all of its' items it is done.
