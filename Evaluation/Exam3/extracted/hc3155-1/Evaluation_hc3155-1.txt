@@ -19,3 +19,8 @@ Question 2 - Multithreading with coordination
 
 
 Question 3 - Sets & Dictionary 
+
+Case-insensitive retrieval not handled
+getWords(char letter) does not convert the input letter to lowercase.
+If a user calls getWords('T'), it will return null.
+
