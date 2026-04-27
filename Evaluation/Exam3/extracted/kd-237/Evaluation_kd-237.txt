@@ -8,8 +8,12 @@ Question 3 -> 20
 
 
 Question 1 -  Java Socket Client Implementation 
-
-
+Prompts for messages should be a continuous input loop.
+Checks only "Exit" instead of case-insensitive "EXIT".
+Does not send EXIT to the server.
+Converts messages to uppercase before sending, changing user input.
+Reads only one response line instead of all server response lines.
+Outer while(true) causes the program to continue indefinitely.
 
 
 Question 2 - Multithreading with coordination
