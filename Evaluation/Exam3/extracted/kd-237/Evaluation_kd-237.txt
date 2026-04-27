@@ -1,6 +1,6 @@
 Total
 
-Question 1 -> 40
+Question 1 -> 32
 
 Question 2 -> 40
 
@@ -10,7 +10,8 @@ Question 3 -> 20
 Question 1 -  Java Socket Client Implementation 
 1. Prompts for messages should be a continuous input loop.
 2. Check for Exit should be case insensitive. 
-3. 
+3. Exit command is not send to Server. For server response, you need to 
+read atleast 2 incoming message.
 
 
 Question 2 - Multithreading with coordination
