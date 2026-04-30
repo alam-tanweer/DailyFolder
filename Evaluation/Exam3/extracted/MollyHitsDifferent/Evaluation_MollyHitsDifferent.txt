@@ -2,20 +2,28 @@ Total
 
 Question 1 -> 28
 
-Question 2 -> 40
+Question 2 -> 26
 
-Question 3 -> 20
+Question 3 -> 9
 
 
 Question 1 -  Java Socket Client Implementation 
 
-Program is incomplete. There is no steps to send the information to server and receive response.
+Program is incomplete. There is no steps to send the information to server and receive response. Some of the issue with code
+1. Socket is created but never connected to localhost:12345. Attempts to get input/output streams from an unconnected socket.
+2. User prompt to capture user input is missing.
+3. No loop to send input. No EXIT handling and No server response reading/output.
 
 
 Question 2 - Multithreading with coordination
-
-
-
+I have found several issues with the code as follows
+1. gate.await() is inside the task creation loop, so the program will block on the first iteration.
+2. countDown() happens after await(), resulting in incomplete latch logic
+3. Worker task does not print start/completion messages.
+4. Sleep time is fixed at 100 ms, not random 1–20 seconds. Tasks are not coordinated to start together.
 
 
 Question 3 - Sets & Dictionary 
+1. Incomplete program.
+2. GetWords is missing Implementation
+3. Invalid syntax: new String[];, while(True), and code outside a method.

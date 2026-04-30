@@ -2,20 +2,22 @@ Total
 
 Question 1 -> 40
 
-Question 2 -> 40
+Question 2 -> 38
 
-Question 3 -> 20
+Question 3 -> 18
 
 
 Question 1 -  Java Socket Client Implementation 
-
-
-
+Excellent Implementation
 
 Question 2 - Multithreading with coordination
+Sleep duration is less than required; it uses 0–999 milliseconds instead of 1–20 seconds. Also, finish.countDown() happens before printing the completed message, 
+so the final message could theoretically print before the last completed message.
 
 
+Question 3 - Sets & Dictionary
+Returns an array instead of a set/list-style collection, does not handle uppercase input letters, 
+and scans all words each time rather than using a map for efficient retrieval.
 
-
-
-Question 3 - Sets & Dictionary 
+Problem has compilation issue at return words.toArray(String[]);
+correct syntax is return words.toArray(new String[words.size()]);

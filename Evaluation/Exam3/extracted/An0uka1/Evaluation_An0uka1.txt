@@ -1,21 +1,32 @@
 Total
 
-Question 1 -> 40
+Question 1 -> 37
 
-Question 2 -> 40
+Question 2 -> 30
 
-Question 3 -> 20
+Question 3 -> 12
 
 
 Question 1 -  Java Socket Client Implementation 
-
-
+1. Reads only one response line instead of both server response lines.
+2. Code creates a new Scanner and PrintWriter inside the loop each time. Not an effcient programming
+3. resources are not consistently closed.
 
 
 Question 2 - Multithreading with coordination
-
-
-
+Couple of issues with the Code1. 
+1 exec.shutdown() is called after awaitTermination(), so the program may never terminate correctly.
+2 Final message print repeatedly inside the while loop. Don't need to call await command in the loop. Sequence would be
+   await()  --> Ensures that wait till thread is called.
+   print final message.
+4. Incorrect usage of latch. Latch is used more like an end condition, not a start coordination mechanism.
 
 
 Question 3 - Sets & Dictionary 
+1. Following section of code is not correctly implemented. It will return all the words in the phrase.
+        for(String word : set){
+            if (word.startsWith(sb.toString()));{
+                set2.add(word);
+            }
+        }
+2. Result is not as per expectation.

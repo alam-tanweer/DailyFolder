@@ -17,7 +17,7 @@ public class WordsByLetter {
         sb.append(letter);
         for(String word : set){
             if (word.startsWith(sb.toString()));{
-                set2.add(word)
+                set2.add(word);
             }
         }
         return set2;

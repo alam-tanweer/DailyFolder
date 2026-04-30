@@ -1,21 +1,20 @@
 Total
 
-Question 1 -> 40
+Question 1 -> 39
 
-Question 2 -> 40
+Question 2 -> 38
 
-Question 3 -> 20
+Question 3 -> 19
 
 
 Question 1 -  Java Socket Client Implementation 
-
-
-
+EXIT check is case-sensitive; requirement was case-insensitive. Server check for case insensitve "EXIT", will cause error
+Scanner is not closed.
 
 Question 2 - Multithreading with coordination
-
-
-
-
+The CountDownLatch is not used perfectly as a start trigger. Because countDown() happens inside the same loop that submits tasks, some tasks may begin after enough countdowns occur,
+rather than all being fully submitted first. However, the core coordination/concurrency idea is mostly correct.
 
 Question 3 - Sets & Dictionary 
+getWords() is not case-insensitive because letter is not converted to lowercase.
+Lookup scans the full set each time rather than using a map organized by starting letter.

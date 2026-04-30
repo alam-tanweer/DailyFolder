@@ -1,21 +1,26 @@
 Total
 
-Question 1 -> 40
+Question 1 -> 32
 
-Question 2 -> 40
+Question 2 -> 26
 
 Question 3 -> 20
 
 
 Question 1 -  Java Socket Client Implementation 
 
+Does not send EXIT to the server, so the server may never know to stop and respond. After entering Exit, 
+You code hangs. You must send the Exit command before reading the resonse.
 
+You are using scanner.next() instead of nextLine(), so multi-word input would not work.
 
 
 Question 2 - Multithreading with coordination
+There are several issues with the code
+1. The started message is inside for(int i = 0; i < i; i++), which never runs. You are calling thread::run, which has 
+   no impact with Executor service
+2. Does not print completed messages and Does not wait for all tasks to finish.
+3. Final message "All tasks completed." is missing.
+4. Program does not print required output.
 
 
-
-
-
-Question 3 - Sets & Dictionary 

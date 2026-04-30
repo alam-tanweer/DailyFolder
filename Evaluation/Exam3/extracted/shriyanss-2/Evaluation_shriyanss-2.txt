@@ -1,6 +1,6 @@
 Total
 
-Question 1 -> 40
+Question 1 -> 39
 
 Question 2 -> 40
 
@@ -8,14 +8,13 @@ Question 3 -> 20
 
 
 Question 1 -  Java Socket Client Implementation 
-
-
+The required prompt was not used. It prints >>> instead of: Either enter a value or Type EXIT to end:
+It is more about usability and readability aspect as user may not know what program as expecting to do.
 
 
 Question 2 - Multithreading with coordination
-
-
-
-
+Your code does not use a start trigger such as CountDownLatch, so threads start as they are started rather 
+than waiting until all are ready.
 
 Question 3 - Sets & Dictionary 
+Excellent implementation

@@ -1,4 +1,4 @@
-Total
+Total - 40 + 40 + 17
 
 Question 1 -> 40
 
@@ -17,5 +17,9 @@ Question 2 - Multithreading with coordination
 
 
 
-
 Question 3 - Sets & Dictionary 
+
+Code works but has follwing issues
+getWords() returns a String instead of a data structure.
+Retrieval is not case-insensitive because letter is not converted to lowercase.
+Lookup is not efficient because it loops through all words each time instead of using a Map<Character, Set<String>>.

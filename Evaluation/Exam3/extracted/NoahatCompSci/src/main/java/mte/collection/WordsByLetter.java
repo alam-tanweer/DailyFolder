@@ -22,7 +22,8 @@ public class WordsByLetter {
                 words.add(word);
             }
         }
-        return words.toArray(String[]);
+        return words.toArray(new String[0]);
+        // return words.toArray(String[]);
     }
 
     public static void main(String[] args) {

@@ -38,7 +38,7 @@ public class WordsByLetter {
         WordsByLetter wordsByLetters = new WordsByLetter("The cat in the hat is back with a bright blue bat out in the back");
 
         // Uncomment below lines to test.
-        System.out.println(wordsByLetters.getWords('t')); // Output: [the]
+        System.out.println(wordsByLetters.getWords('T')); // Output: [the]
         System.out.println(wordsByLetters.getWords('b')); // Output: ["back", "bright", "blue", "bat"]
     }
 }

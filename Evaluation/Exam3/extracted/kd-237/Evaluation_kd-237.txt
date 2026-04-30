@@ -4,7 +4,7 @@ Question 1 -> 32
 
 Question 2 -> 40
 
-Question 3 -> 20
+Question 3 -> 10
 
 
 Question 1 -  Java Socket Client Implementation 
@@ -15,9 +15,13 @@ read atleast 2 incoming message.
 
 
 Question 2 - Multithreading with coordination
-
-
-
-
+Good Implementation.
 
 Question 3 - Sets & Dictionary 
+There are several issues with the Implementation
+1. Cannot use enhanced for-loop directly on a String: for (String w : phrase).
+2. Cannot use enhanced for-loop on a char: for(char chr : letter).
+3. char does not have .equals().
+4. getWords() declares return type String but returns nothing.
+5. Does not retrieve words by starting letter.
+6. Program does not compile

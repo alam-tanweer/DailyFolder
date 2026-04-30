@@ -1,25 +1,22 @@
-Total
+Total = 40 + 38 + 19 = 97
 
 Question 1 -> 40
 
-Question 2 -> 40
+Question 2 -> 38
 
-Question 3 -> 20
+Question 3 -> 19
 
 
 Question 1 -  Java Socket Client Implementation 
-
-
+Excellent implementation.
 
 
 Question 2 - Multithreading with coordination
-
-
-
+The requirement was to create 5 threads/tasks, but the code only creates 3 tasks.
+Sleep time should be random between 1 and 20 seconds, but your code sleeps between 100 and 999 milliseconds.
 
 
 Question 3 - Sets & Dictionary 
-
 Case-insensitive retrieval not handled
 getWords(char letter) does not convert the input letter to lowercase.
 If a user calls getWords('T'), it will return null.

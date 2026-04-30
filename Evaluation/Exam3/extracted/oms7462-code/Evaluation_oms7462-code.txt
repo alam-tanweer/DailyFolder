@@ -1,21 +1,22 @@
-Total
+Total 40 + 
 
 Question 1 -> 40
 
-Question 2 -> 40
+Question 2 -> 36
 
-Question 3 -> 20
+Question 3 -> 19
 
 
 Question 1 -  Java Socket Client Implementation 
-
-
-
+Any resources created should be properly closed.
+Resources are not fully closed.
 
 Question 2 - Multithreading with coordination
-
-
-
+CountDownLatch is created but never used by the worker threads, so tasks do not wait for a common start trigger.
+awaitTermination() is called before shutdown(), so it does not correctly wait for all tasks to complete.
+Final message may print before tasks finish. Final message may print before tasks finish.
 
 
 Question 3 - Sets & Dictionary 
+Retrieval is not case-insensitive because letter is not converted to lowercase.
+getWords() loops through all words each time, lookup could be optimized with a map.
